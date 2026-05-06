@@ -1,15 +1,4 @@
-import { ComplianceBox } from "@/components/ComplianceBox";
-import { FAQ } from "@/components/FAQ";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { LeadForm } from "@/components/LeadForm";
-import { ProblemSection } from "@/components/ProblemSection";
-import { ProcessSection } from "@/components/ProcessSection";
-import { SolutionSection } from "@/components/SolutionSection";
-import { TargetCustomers } from "@/components/TargetCustomers";
-import { TrainingCategories } from "@/components/TrainingCategories";
-import { WhyUs } from "@/components/WhyUs";
+import { PremiumLanding } from "@/components/PremiumLanding";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -33,20 +22,7 @@ const structuredData = {
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <ProblemSection />
-        <SolutionSection />
-        <TrainingCategories />
-        <ProcessSection />
-        <TargetCustomers />
-        <WhyUs />
-        <ComplianceBox />
-        <FAQ />
-        <LeadForm />
-      </main>
-      <Footer />
+      <PremiumLanding />
       <script
         type="application/ld+json"
         suppressHydrationWarning
