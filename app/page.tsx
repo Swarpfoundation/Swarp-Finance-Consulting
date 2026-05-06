@@ -14,7 +14,7 @@ import { WhyUs } from "@/components/WhyUs";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Swarp Academy",
+  name: "Swarp Finance Consulting",
   description:
     "Supporto consulenziale e operativo per aziende italiane che vogliono attivare percorsi di formazione finanziata tramite Fondi Interprofessionali.",
   areaServed: "IT",

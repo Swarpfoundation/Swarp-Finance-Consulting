@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const links = [
@@ -16,10 +17,15 @@ export function Header() {
         className="section-shell flex min-h-16 items-center justify-between gap-4"
       >
         <Link href="#" className="flex items-center gap-3 font-semibold tracking-wide">
-          <span className="grid size-9 place-items-center rounded-md border border-[#00D2D3]/35 bg-[#00D2D3]/10 text-[#00D2D3]">
-            SA
-          </span>
-          <span>Swarp Academy</span>
+          <Image
+            src="/swarp-finance-consulting-logo.png"
+            alt="Swarp Finance Consulting"
+            width={40}
+            height={40}
+            className="size-10 rounded-md border border-[#00D2D3]/35 object-cover"
+            priority
+          />
+          <span>Swarp Finance Consulting</span>
         </Link>
         <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
           {links.map((link) => (

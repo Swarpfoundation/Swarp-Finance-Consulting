@@ -1,6 +1,6 @@
-# Swarp Academy
+# Swarp Finance Consulting
 
-Marketing website for Swarp Academy, a B2B Italian service supporting companies with funded employee training through Fondi Interprofessionali.
+Marketing website for Swarp Finance Consulting, a B2B Italian service supporting companies with funded employee training through Fondi Interprofessionali.
 
 ## Local development
 

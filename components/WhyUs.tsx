@@ -14,7 +14,7 @@ export function WhyUs() {
   return (
     <section className="bg-[#07111f]/70 py-20">
       <div className="section-shell">
-        <SectionHeading title="Perché scegliere Swarp Academy" />
+        <SectionHeading title="Perché scegliere Swarp Finance Consulting" />
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map(({ icon: Icon, title }) => (
             <article key={title} className="rounded-lg border border-white/10 bg-[#050B14]/70 p-6">

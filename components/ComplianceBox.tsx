@@ -10,7 +10,7 @@ export function ComplianceBox() {
             <div>
               <h2 className="text-3xl font-semibold">Chiarezza prima di tutto</h2>
               <p className="mt-4 leading-8 text-slate-200">
-                Swarp Academy non è un ente pubblico, INPS o Ministero del Lavoro. Il servizio
+                Swarp Finance Consulting non è un ente pubblico, INPS o Ministero del Lavoro. Il servizio
                 consiste in supporto consulenziale, progettazione formativa, coordinamento operativo
                 e gestione documentale. L&apos;accesso alla formazione finanziata dipende dal fondo
                 interprofessionale scelto, dai requisiti dell&apos;azienda, dagli avvisi disponibili,

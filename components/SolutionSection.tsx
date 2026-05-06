@@ -18,7 +18,7 @@ export function SolutionSection() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Soluzione"
-          title="Swarp Academy semplifica l'intero percorso"
+          title="Swarp Finance Consulting semplifica l'intero percorso"
           text="Un servizio operativo per passare dalla confusione burocratica a un piano formativo concreto, con passaggi chiari e responsabilità coordinate."
         />
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
