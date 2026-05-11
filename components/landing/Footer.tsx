@@ -34,11 +34,11 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-ink-100">
-              Formazione finanziata per aziende italiane.{" "}
+              Formazione finanziata al 100% per le PMI italiane.{" "}
               <span className="font-display italic font-normal text-brand-200">
-                Analisi, piano, coordinamento e documenti
+                Recuperiamo i fondi interprofessionali,
               </span>{" "}
-              in un percorso operativo.
+              gestiamo la burocrazia.
             </p>
           </div>
 
@@ -78,8 +78,7 @@ export function Footer() {
                 <span className="italic text-brand-200">S.r.l.</span>
               </p>
               <p className="mt-2 text-sm text-ink-200">
-                Swarp Finance Consulting è un prodotto di Swarp Foundation — Società a
-                Responsabilità Limitata.
+                Swarp Finance Consulting è un servizio di Swarp Foundation S.r.l.
               </p>
             </div>
             <a
@@ -144,8 +143,8 @@ export function Footer() {
             © {new Date().getFullYear()} Swarp Foundation S.r.l.
           </p>
           <p className="max-w-xl text-xs leading-6 text-ink-300 md:text-right">
-            Supporto consulenziale B2B. Non siamo un ente pubblico, INPS o Ministero del Lavoro.
-            L&apos;accesso ai fondi resta soggetto a requisiti e approvazioni.
+            Partner consulenziale B2B. I fondi interprofessionali sono regolati dal Ministero del
+            Lavoro e raccolti dall&apos;INPS. Swarp ne gestisce l&apos;attivazione per le PMI.
           </p>
         </div>
       </div>

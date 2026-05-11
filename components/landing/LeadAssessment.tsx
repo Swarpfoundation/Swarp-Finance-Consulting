@@ -28,12 +28,12 @@ const initialForm: LeadPayload = {
 };
 
 const interests = [
-  "AI",
-  "Digitale",
+  "Sicurezza obbligatoria",
   "Marketing e vendite",
-  "Sicurezza",
+  "AI e digitale",
   "Lingue",
-  "Formazione tecnica",
+  "Gestione aziendale",
+  "Formazione di settore",
   "Altro",
 ];
 
@@ -176,11 +176,11 @@ export function LeadAssessment() {
             <CheckCircle2 className="size-10" aria-hidden="true" />
           </div>
           <h2 className="mt-8 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Richiesta <span className="font-display italic font-normal text-brand-300">acquisita.</span>
+            Richiesta <span className="font-display italic font-normal text-brand-300">ricevuta.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-8 text-ink-100">
-            Analizzeremo i dati inviati e ti contatteremo per una valutazione preliminare. Il
-            prossimo step e capire fondo, requisiti e possibili aree formative.
+            Verifichiamo il tuo fondo interprofessionale e ti ricontattiamo con una stima delle ore
+            finanziabili e dei corsi attivabili per la tua azienda.
           </p>
           <button
             type="button"
@@ -209,15 +209,15 @@ export function LeadAssessment() {
       <div className="relative mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.75fr_1.25fr]">
         <aside className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 backdrop-blur-xl lg:sticky lg:top-28 lg:h-fit">
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-brand-200">
-            Assessment
+            Verifica fondo
           </p>
           <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight tracking-tight text-white">
-            Verifica preliminare{" "}
-            <span className="font-display italic font-normal text-brand-300">in pochi minuti.</span>
+            Quanto ti spetta?{" "}
+            <span className="font-display italic font-normal text-brand-300">Scoprilo in pochi minuti.</span>
           </h2>
           <p className="mt-5 text-pretty leading-8 text-ink-100">
-            Il form raccoglie le informazioni minime per capire se ha senso procedere con una
-            valutazione piu dettagliata.
+            Bastano pochi dati: dimensione azienda, settore e aree formative di interesse. Ti
+            ricontattiamo entro pochi giorni con una stima concreta delle ore finanziabili.
           </p>
 
           <div className="mt-8">
@@ -273,7 +273,7 @@ export function LeadAssessment() {
 
           <div className="mt-8 flex items-center gap-3 rounded-2xl border border-gold-200/20 bg-gold-200/5 p-4 text-xs leading-6 text-gold-200">
             <Sparkles className="size-4 shrink-0" aria-hidden="true" />
-            Nessuna promessa di accesso. Valutazione preliminare basata sui requisiti.
+            Possono accedere tutte le aziende private con almeno un dipendente.
           </div>
         </aside>
 
@@ -352,7 +352,7 @@ export function LeadAssessment() {
               </button>
             ) : (
               <p className="text-sm leading-6 text-slate-500">
-                Dati usati solo per il ricontatto e la valutazione preliminare.
+                Dati usati solo per ricontattarti sulla verifica del tuo fondo.
               </p>
             )}
 
@@ -467,7 +467,7 @@ function StepFabbisogni({
           Aree formative
         </legend>
         <p className="mt-2 text-sm leading-6 text-slate-600">
-          Seleziona almeno un&apos;area di interesse: ci aiuta a calibrare la valutazione.
+          Obbligatoria, professionalizzante o di settore: seleziona almeno un&apos;area di interesse.
         </p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {interests.map((interest) => (
@@ -546,9 +546,8 @@ function StepContatti({ form, errors, update }: StepProps) {
           onChange={(event) => update("consent", event.target.checked)}
           className="mt-1 size-4 shrink-0 accent-brand-500"
         />
-        Accetto di essere ricontattato per una valutazione preliminare. La richiesta non garantisce
-        accesso al finanziamento, che resta soggetto a requisiti, avvisi disponibili e approvazione
-        del piano.
+        Accetto di essere ricontattato da Swarp per la verifica del fondo interprofessionale e per
+        ricevere informazioni sull&apos;attivazione della formazione finanziata.
       </label>
       {errors.consent ? <ErrorText>{errors.consent}</ErrorText> : null}
     </div>

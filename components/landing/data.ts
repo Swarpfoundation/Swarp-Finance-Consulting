@@ -1,5 +1,4 @@
 import {
-  BarChart3,
   BookOpenCheck,
   BrainCircuit,
   BriefcaseBusiness,
@@ -15,7 +14,6 @@ import {
   ShieldAlert,
   Sparkles,
   Store,
-  Target,
   Utensils,
   Wrench,
 } from "lucide-react";
@@ -28,60 +26,54 @@ export const navItems = [
 ];
 
 export const proofPoints = [
-  "Aziende con almeno 1 dipendente",
-  "Analisi fondo e requisiti",
-  "Coordinamento con consulente",
-  "Documentazione operativa",
-];
-
-export const problemCards = [
-  {
-    icon: BarChart3,
-    title: "Contributi gia versati",
-    text: "Molte aziende sostengono contributi collegati alla formazione continua, ma non li trasformano in competenze.",
-  },
-  {
-    icon: Network,
-    title: "Fondi e procedure",
-    text: "Avvisi, scadenze, requisiti e documenti rendono difficile agire senza una regia operativa.",
-  },
-  {
-    icon: Target,
-    title: "Fabbisogni dispersi",
-    text: "AI, digitale, sicurezza e vendita richiedono piani concreti, non corsi scelti a caso.",
-  },
+  "Per aziende con almeno 1 dipendente",
+  "Finanziata al 100% a fondo perduto",
+  "Burocrazia gestita da Swarp",
+  "Tutte le aree e tutti i settori",
 ];
 
 export const processSteps = [
   {
-    icon: ClipboardCheck,
-    label: "Diagnosi",
-    title: "Raccolta dati",
-    text: "Azienda, dipendenti, settore, consulente del lavoro e priorita formative.",
+    icon: Sparkles,
+    label: "Contatto",
+    title: "Spieghiamo il meccanismo",
+    text: "Ti raccontiamo cosa sono i fondi interprofessionali, da dove arrivano e cosa puoi finanziare. Spiegazione semplice, a prova di liceo.",
   },
   {
-    icon: Shield,
-    label: "Verifica",
-    title: "Fondo e requisiti",
-    text: "Controllo preliminare del percorso possibile, degli avvisi e delle condizioni applicabili.",
-  },
-  {
-    icon: Route,
-    label: "Design",
-    title: "Piano formativo",
-    text: "Costruiamo obiettivi, calendario, modalita e contenuti coerenti con la procedura.",
-  },
-  {
-    icon: BookOpenCheck,
-    label: "Delivery",
-    title: "Erogazione",
-    text: "La formazione parte solo dopo verifiche e approvazioni necessarie.",
+    icon: Network,
+    label: "Contatti",
+    title: "Raccolta riferimenti",
+    text: "Ci colleghiamo con il titolare e con il consulente del lavoro per coordinare insieme i passaggi successivi.",
   },
   {
     icon: FileCheck2,
-    label: "Chiusura",
-    title: "Documenti",
-    text: "Supporto su registri, presenze e rendicontazione operativa fino alla chiusura.",
+    label: "Informativa",
+    title: "Email con la documentazione",
+    text: "Ricevi una mail con la spiegazione completa, in versione semplice e tecnica, con i link alle fonti ufficiali (Ministero del Lavoro, INPS).",
+  },
+  {
+    icon: Shield,
+    label: "Iscrizione",
+    title: "Adesione al fondo",
+    text: "Il consulente del lavoro iscrive l'azienda al fondo tramite portale INPS. Tempo medio: 1 – 1,5 mesi.",
+  },
+  {
+    icon: Route,
+    label: "Definizione",
+    title: "Piano formativo",
+    text: "Scegliamo insieme tipologia di corsi e obiettivi: formazione teorica e training on the job in azienda.",
+  },
+  {
+    icon: BookOpenCheck,
+    label: "Avvio",
+    title: "Partenza corsi",
+    text: "Dopo l'attivazione del fondo, parte la formazione. Tu pensi all'azienda, ai docenti e ai materiali ci pensiamo noi.",
+  },
+  {
+    icon: ClipboardCheck,
+    label: "Rendicontazione",
+    title: "Burocrazia gestita",
+    text: "Registri, presenze, documenti e chiusura: Swarp si occupa di tutta la parte burocratica fino alla rendicontazione.",
   },
 ];
 
@@ -95,62 +87,62 @@ export const trainingCategories: {
   featured?: boolean;
 }[] = [
   {
-    icon: BrainCircuit,
-    title: "AI per PMI",
-    text: "Automazioni, strumenti generativi e casi d'uso pratici per ridurre tempi e costi.",
-    tag: "digitale",
-    featured: true,
-  },
-  {
-    icon: MonitorCog,
-    title: "Digital skills",
-    text: "Excel, strumenti web, processi digitali e produttivita operativa.",
-    tag: "digitale",
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: "Marketing e vendite",
-    text: "Brand, funnel, negoziazione, customer care e crescita commerciale.",
-    tag: "commerciale",
-    featured: true,
-  },
-  {
     icon: Shield,
-    title: "Sicurezza",
-    text: "Percorsi obbligatori, aggiornamenti e cultura della prevenzione.",
+    title: "Sicurezza sul lavoro",
+    text: "D.Lgs 81/08 e tutti gli obblighi di legge. Formazione obbligatoria, finanziabile al 100%.",
     tag: "sicurezza",
     featured: true,
   },
   {
     icon: Flame,
-    title: "Emergenze",
-    text: "Antincendio, primo soccorso e formazione tecnica conforme.",
+    title: "Antincendio e primo soccorso",
+    text: "Percorsi obbligatori, aggiornamenti periodici e cultura della prevenzione in azienda.",
     tag: "sicurezza",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Marketing e vendite",
+    text: "Branding, vendite, negoziazione e gestione del cliente: le competenze che portano fatturato.",
+    tag: "commerciale",
+    featured: true,
+  },
+  {
+    icon: BrainCircuit,
+    title: "Intelligenza artificiale",
+    text: "Strumenti generativi, automazioni e casi d'uso pratici per ridurre tempi e costi.",
+    tag: "digitale",
+    featured: true,
+  },
+  {
+    icon: MonitorCog,
+    title: "Excel e digitale",
+    text: "Excel, siti web, strumenti digitali e produttività operativa per chi lavora ogni giorno.",
+    tag: "digitale",
+  },
+  {
+    icon: Wrench,
+    title: "Gestione aziendale",
+    text: "Organizzazione, processi e gestione del personale e dell'attività quotidiana.",
+    tag: "operations",
   },
   {
     icon: Languages,
     title: "Lingue",
-    text: "Inglese business e italiano operativo per team internazionali.",
+    text: "Inglese business per il commerciale e italiano operativo per il personale straniero.",
     tag: "lingue",
     featured: true,
   },
   {
-    icon: Store,
-    title: "Retail e servizi",
-    text: "Hospitality, ristorazione, palestre, negozi e front office.",
+    icon: Utensils,
+    title: "Ristorazione e hospitality",
+    text: "Bartender, mixology, gestione staff e servizio clienti per ristoranti, hotel e bar.",
     tag: "operations",
     featured: true,
   },
   {
-    icon: Wrench,
-    title: "Tecnica di settore",
-    text: "Percorsi verticali costruiti sui fabbisogni reali dell'azienda.",
-    tag: "operations",
-  },
-  {
-    icon: Utensils,
-    title: "Operations",
-    text: "Logistica, produzione, qualita e gestione quotidiana del lavoro.",
+    icon: Store,
+    title: "Palestre e centri sportivi",
+    text: "Formazione istruttori e personal trainer, gestione clienti e organizzazione del centro.",
     tag: "operations",
   },
 ];
@@ -165,57 +157,55 @@ export const trainingFilters: { id: "all" | TrainingTag; label: string }[] = [
 ];
 
 export const targetCustomers = [
-  "Micro imprese",
-  "PMI",
+  "Micro imprese — fino a 10 dipendenti",
+  "Piccole imprese — oltre 10 dipendenti",
+  "Medie imprese — oltre 50 dipendenti",
+  "Grandi imprese — accesso a più fondi",
   "Studi professionali",
-  "Retail e servizi locali",
-  "Ristorazione e hotel",
+  "Ristorazione, hotel e bar",
   "Palestre e centri sportivi",
-  "Logistica e produzione",
-  "Aziende digitali e B2B",
+  "Retail, servizi e produzione",
 ];
 
 export const faqItems = [
   {
-    q: "E formazione gratuita?",
-    a: "E piu corretto parlare di formazione finanziata. L'azienda usa meccanismi collegati a contributi gia versati, quando i requisiti sono soddisfatti e il piano viene approvato.",
+    q: "È formazione gratuita?",
+    a: "No. È formazione finanziata al 100% a fondo perduto. La differenza è importante: i fondi non sono un regalo, sono soldi che la tua azienda ha già versato sotto forma di contributi obbligatori.",
   },
   {
-    q: "L'azienda riceve denaro in contanti?",
-    a: "No. Normalmente il beneficio riguarda il finanziamento o rimborso di percorsi formativi approvati ed erogati, non un contributo cash libero.",
+    q: "Da dove arrivano questi fondi?",
+    a: "Dallo 0,30% dei contributi che ogni azienda versa per ciascun dipendente. L'INPS li raccoglie e li trasferisce ai fondi interprofessionali, regolati dal Ministero del Lavoro.",
   },
   {
-    q: "Serve il consulente del lavoro?",
-    a: "Nella maggior parte dei casi si, per verifiche sulla posizione contributiva, adesione al fondo e aspetti collegati alla gestione del personale.",
+    q: "Cosa succede se non li uso?",
+    a: "Ogni anno i fondi inutilizzati tornano all'INPS. Non rimangono in azienda e non si accumulano: se non li attivi, li perdi. È il motivo principale per cui esiste Swarp.",
   },
   {
     q: "Quali aziende possono accedere?",
-    a: "Il servizio e pensato principalmente per aziende private con almeno un dipendente. La verifica finale dipende da posizione contributiva, fondo scelto e requisiti applicabili.",
+    a: "Tutte le aziende private con almeno un dipendente. Le ore di formazione finanziabili variano in base alla dimensione: indicativamente 50 per le micro imprese, 100 per le piccole, 200 per le medie. Le grandi imprese accedono a più fondi.",
   },
   {
-    q: "L'approvazione del piano e garantita?",
-    a: "No. Ogni richiesta resta soggetta a requisiti, disponibilita fondi, procedure, tempistiche e approvazione finale del piano formativo.",
+    q: "Cosa si può finanziare?",
+    a: "Qualsiasi formazione utile per l'azienda: sicurezza obbligatoria (D.Lgs 81/08, antincendio, primo soccorso), professionalizzante (marketing, vendite, gestione, Excel, AI, lingue) e settoriale (ristorazione, palestre, tecnica di settore). Modalità: teoria e training on the job.",
+  },
+  {
+    q: "Quanto tempo serve per partire?",
+    a: "L'iscrizione al fondo tramite portale INPS la gestisce il consulente del lavoro e richiede 1 – 1,5 mesi. Dopo l'attivazione si definiscono insieme i corsi e si parte. La parte burocratica resta in capo a Swarp.",
   },
 ];
 
-export const trustMetrics = [
-  { value: 240, suffix: "+", label: "Aziende analizzate", caption: "PMI italiane attive" },
-  { value: 18, suffix: "", label: "Regioni servite", caption: "Copertura su tutto il territorio" },
-  { value: 15, suffix: "", label: "Settori coperti", caption: "Retail, AI, sicurezza, lingue" },
-];
+export const trustMetrics: {
+  value: number;
+  suffix: string;
+  label: string;
+  caption: string;
+}[] = [];
 
-// To swap placeholders for real client logos, drop SVGs in /public/logos/
-// and add `src: "/logos/<file>.svg"` to each entry below.
-export const partnerLogos: { name: string; src?: string }[] = [
-  { name: "Ferrara Logistica" },
-  { name: "Tessile Veneto" },
-  { name: "Romano & Partners" },
-  { name: "Olivetti Digitale" },
-  { name: "Casa del Caffe" },
-  { name: "Studio Bianchi" },
-];
+// Add real client logos by dropping SVGs in /public/logos/
+// and pushing entries like { name: "Cliente", src: "/logos/cliente.svg" }.
+export const partnerLogos: { name: string; src?: string }[] = [];
 
-// Placeholder testimonials — replace with real, compliance-safe quotes when ready.
+// Add real, compliance-safe testimonials here.
 // Add `photo: "/testimonials/<file>.jpg"` to render a photo instead of the initials chip.
 export const testimonials: {
   quote: string;
@@ -225,36 +215,10 @@ export const testimonials: {
   sector: string;
   photo?: string;
   featured?: boolean;
-}[] = [
-  {
-    quote:
-      "Avevamo l'impressione di pagare contributi senza ritorno. Con Swarp abbiamo capito cosa era davvero attivabile e quali passaggi servivano. Tutto piu chiaro, finalmente.",
-    name: "Marta Ferrari",
-    role: "Direttrice HR",
-    company: "Ferrara Logistica",
-    sector: "Logistica",
-    featured: true,
-  },
-  {
-    quote:
-      "La parte di coordinamento con il nostro consulente del lavoro e con il fondo e stata risolutiva. Da soli non saremmo partiti.",
-    name: "Luca Bianchi",
-    role: "Titolare",
-    company: "Studio Bianchi",
-    sector: "Servizi professionali",
-  },
-  {
-    quote:
-      "Non ci hanno promesso scorciatoie. Hanno costruito un piano coerente con quello che serviva davvero alla nostra squadra.",
-    name: "Elena Romano",
-    role: "Operations Manager",
-    company: "Tessile Veneto",
-    sector: "Manifatturiero",
-  },
-];
+}[] = [];
 
 export const assessmentStats = [
-  { icon: Sparkles, label: "Output", value: "Valutazione preliminare" },
-  { icon: CheckCircle2, label: "Focus", value: "Requisiti verificabili" },
-  { icon: ShieldAlert, label: "Nota", value: "Nessuna promessa di accesso" },
+  { icon: Sparkles, label: "Output", value: "Verifica fondo + ore stimate" },
+  { icon: CheckCircle2, label: "Accesso", value: "Aziende con ≥1 dipendente" },
+  { icon: ShieldAlert, label: "Burocrazia", value: "Gestita da Swarp" },
 ];

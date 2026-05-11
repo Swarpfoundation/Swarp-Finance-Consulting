@@ -5,13 +5,14 @@ const structuredData = {
   "@type": "ProfessionalService",
   name: "Swarp Finance Consulting",
   description:
-    "Supporto consulenziale e operativo per aziende italiane che vogliono attivare percorsi di formazione finanziata tramite Fondi Interprofessionali.",
+    "Swarp Finance Consulting recupera i fondi interprofessionali (0,30% dei contributi) e li trasforma in formazione finanziata al 100% a fondo perduto per le PMI italiane: iscrizione al fondo, definizione dei corsi e gestione completa della burocrazia.",
   areaServed: "IT",
   serviceType: [
-    "Formazione finanziata",
+    "Fondi interprofessionali",
+    "Formazione finanziata al 100%",
+    "Iscrizione al fondo",
     "Progettazione formativa",
-    "Coordinamento operativo",
-    "Gestione documentale",
+    "Rendicontazione e burocrazia",
   ],
   parentOrganization: {
     "@type": "Organization",

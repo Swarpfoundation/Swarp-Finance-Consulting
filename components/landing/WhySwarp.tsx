@@ -1,21 +1,14 @@
 "use client";
 
-import { ArrowUpRight, ClipboardCheck, MapPin, Route, ShieldAlert, Sparkles } from "lucide-react";
+import { ArrowUpRight, ClipboardCheck, Route, ShieldAlert, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
-const fabbisogniBars = [
-  { label: "Pre", value: 28, color: "bg-ink-400" },
-  { label: "Diagnosi", value: 55, color: "bg-brand-500/60" },
-  { label: "Piano", value: 78, color: "bg-brand-400/80" },
-  { label: "Delivery", value: 96, color: "bg-brand-300" },
-];
-
 const miniSteps = [
-  { num: "01", label: "Diagnosi" },
-  { num: "02", label: "Verifica" },
-  { num: "03", label: "Piano" },
+  { num: "01", label: "Iscrizione" },
+  { num: "02", label: "Formazione" },
+  { num: "03", label: "Rendicontazione" },
 ];
 
 export function WhySwarp() {
@@ -29,15 +22,15 @@ export function WhySwarp() {
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-14 max-w-3xl">
           <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.32em] text-brand-300">
-            Perche Swarp
+            Perché Swarp
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl">
-            Il valore <span className="font-display italic font-normal text-brand-300">c&apos;e gia.</span>{" "}
-            Spesso manca il sistema per attivarlo.
+            I fondi <span className="font-display italic font-normal text-brand-300">ci sono già.</span>{" "}
+            Quasi nessuno li usa.
           </h2>
           <p className="mt-5 text-pretty text-lg leading-8 text-ink-100">
-            Portiamo metodo, coordinamento e chiarezza in un percorso che per molte PMI resta confuso
-            o fermo.
+            Ogni anno milioni di euro tornano all&apos;INPS perché le aziende non sanno di averli
+            o non riescono a sbloccarli. Swarp li recupera e li ridistribuisce alle PMI.
           </p>
         </div>
 
@@ -46,7 +39,7 @@ export function WhySwarp() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={stagger(0, 0.08)}
-          className="grid auto-rows-[minmax(180px,auto)] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4"
+          className="grid auto-rows-[minmax(180px,auto)] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
         >
           {/* T1 — Headline tile (large feature, 2x2 on lg) */}
           <motion.article
@@ -58,53 +51,21 @@ export function WhySwarp() {
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-400/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.24em] text-brand-200">
                   <Sparkles className="size-3" aria-hidden="true" />
-                  Il problema
+                  Il meccanismo
                 </span>
                 <h3 className="mt-6 text-balance text-2xl font-semibold leading-snug tracking-tight text-white md:text-3xl lg:text-4xl">
-                  Aziende italiane sostengono contributi collegati alla formazione continua, ma{" "}
+                  Ogni mese versi lo 0,30% dei contributi per la formazione dei tuoi dipendenti.{" "}
                   <span className="font-display italic font-normal text-brand-300">
-                    raramente li trasformano in competenze.
+                    Se a fine anno non li usi, li perdi.
                   </span>
                 </h3>
               </div>
               <div className="flex items-center justify-between border-t border-white/10 pt-6">
                 <p className="text-sm leading-6 text-ink-200">
-                  Avvisi, scadenze, requisiti e documenti rendono difficile agire senza una regia
-                  operativa.
+                  I fondi inutilizzati tornano all&apos;INPS. Ogni anno, in silenzio.
                 </p>
                 <ArrowUpRight className="size-6 shrink-0 text-ink-200 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-brand-300" />
               </div>
-            </div>
-          </motion.article>
-
-          {/* T2 — Mini chart tile */}
-          <motion.article
-            variants={fadeUp}
-            className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6"
-          >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-brand-200">
-              Copertura fabbisogni
-            </p>
-            <div className="mt-6 flex h-32 items-end gap-2">
-              {fabbisogniBars.map((bar, index) => (
-                <motion.div
-                  key={bar.label}
-                  initial={{ height: 0 }}
-                  whileInView={{ height: `${bar.value}%` }}
-                  viewport={viewportOnce}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.15 + index * 0.1,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className={`w-full rounded-t-md ${bar.color}`}
-                />
-              ))}
-            </div>
-            <div className="mt-3 flex justify-between text-[10px] uppercase tracking-[0.16em] text-ink-300">
-              {fabbisogniBars.map((bar) => (
-                <span key={bar.label}>{bar.label}</span>
-              ))}
             </div>
           </motion.article>
 
@@ -115,50 +76,10 @@ export function WhySwarp() {
           >
             <ShieldAlert className="size-7 text-gold-200" aria-hidden="true" />
             <h3 className="mt-5 text-base font-semibold leading-snug text-white">
-              Nessuna promessa di accesso.
+              Accesso reale, non promesse.
             </h3>
             <p className="mt-2 text-sm leading-6 text-ink-200">
-              Approvazione e fondo dipendono da requisiti e procedure applicabili.
-            </p>
-          </motion.article>
-
-          {/* T4 — Editorial quote tile */}
-          <motion.article
-            variants={fadeUp}
-            className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 lg:col-span-2"
-          >
-            <div className="absolute right-6 top-6 font-display text-[6rem] leading-none text-brand-400/20">
-              &ldquo;
-            </div>
-            <p className="relative font-display text-2xl italic leading-snug text-white md:text-3xl">
-              I contributi non sono cash. Sono leve formative, da attivare con metodo.
-            </p>
-            <div className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-              <span className="grid size-8 place-items-center rounded-full bg-brand-400/15 text-[10px] font-semibold text-brand-200">
-                SF
-              </span>
-              <p className="text-xs uppercase tracking-[0.22em] text-ink-200">
-                Swarp Finance — Metodo
-              </p>
-            </div>
-          </motion.article>
-
-          {/* T5 — Coverage tile */}
-          <motion.article
-            variants={fadeUp}
-            className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 lg:col-span-2"
-          >
-            <div className="flex items-center justify-between">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-brand-200">
-                Territorio
-              </p>
-              <MapPin className="size-5 text-ink-200" aria-hidden="true" />
-            </div>
-            <p className="mt-6 font-display text-5xl font-normal leading-none tracking-tight text-white md:text-6xl">
-              18<span className="text-brand-300">/20</span>
-            </p>
-            <p className="mt-3 text-sm leading-6 text-ink-200">
-              Regioni italiane attivate con almeno un percorso analizzato.
+              Tutte le aziende private con almeno un dipendente possono attivare il fondo.
             </p>
           </motion.article>
 
@@ -188,6 +109,27 @@ export function WhySwarp() {
             </ul>
           </motion.article>
 
+          {/* T4 — Editorial quote tile */}
+          <motion.article
+            variants={fadeUp}
+            className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 lg:col-span-2"
+          >
+            <div className="absolute right-6 top-6 font-display text-[6rem] leading-none text-brand-400/20">
+              &ldquo;
+            </div>
+            <p className="relative font-display text-2xl italic leading-snug text-white md:text-3xl">
+              Sono soldi tuoi. Se non li usi, l&apos;INPS se li riprende.
+            </p>
+            <div className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+              <span className="grid size-8 place-items-center rounded-full bg-brand-400/15 text-[10px] font-semibold text-brand-200">
+                SF
+              </span>
+              <p className="text-xs uppercase tracking-[0.22em] text-ink-200">
+                Swarp Finance — Posizionamento
+              </p>
+            </div>
+          </motion.article>
+
           {/* T7 — CTA tile */}
           <motion.article
             variants={fadeUp}
@@ -195,13 +137,13 @@ export function WhySwarp() {
           >
             <ClipboardCheck className="size-7 text-brand-200" aria-hidden="true" />
             <h3 className="mt-5 text-base font-semibold leading-snug text-white">
-              Vuoi capire se ha senso per te?
+              Vuoi sapere quanto ti spetta?
             </h3>
             <Link
               href="#contatti"
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition group-hover:text-brand-100"
             >
-              Verifica preliminare
+              Verifica il tuo fondo
               <ArrowUpRight className="size-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
           </motion.article>

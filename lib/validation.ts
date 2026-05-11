@@ -13,12 +13,12 @@ export type LeadPayload = {
 };
 
 const interestOptions = new Set([
-  "AI",
-  "Digitale",
+  "Sicurezza obbligatoria",
   "Marketing e vendite",
-  "Sicurezza",
+  "AI e digitale",
   "Lingue",
-  "Formazione tecnica",
+  "Gestione aziendale",
+  "Formazione di settore",
   "Altro",
 ]);
 

@@ -11,9 +11,9 @@ const instrumentSerif = Instrument_Serif({
   display: "swap",
 });
 
-const title = "Swarp Finance Consulting | Formazione finanziata per aziende italiane";
+const title = "Swarp Finance Consulting | Fondi interprofessionali per le PMI italiane";
 const description =
-  "Swarp Finance Consulting aiuta le aziende italiane ad attivare percorsi di formazione finanziata tramite Fondi Interprofessionali: AI, digitale, sicurezza, vendite, lingue e competenze operative.";
+  "Swarp Finance Consulting recupera i fondi interprofessionali — lo 0,30% di contributi che la tua azienda già versa — e li trasforma in formazione finanziata al 100% per i tuoi dipendenti. Burocrazia gestita.";
 
 export const metadata: Metadata = {
   title: {
@@ -25,14 +25,16 @@ export const metadata: Metadata = {
   applicationName: "Swarp Finance Consulting",
   category: "business",
   keywords: [
-    "formazione finanziata",
     "fondi interprofessionali",
-    "PMI Italia",
-    "consulenza formazione",
+    "formazione finanziata 100%",
+    "fondo perduto formazione",
+    "0,30% contributi formazione",
+    "INPS formazione continua",
+    "PMI Italia formazione",
     "Fondimpresa",
     "Fondir",
-    "AI per aziende",
-    "formazione aziendale",
+    "formazione aziendale finanziata",
+    "sicurezza sul lavoro finanziata",
   ],
   authors: [{ name: "Swarp Finance Consulting" }],
   creator: "Swarp Finance Consulting",

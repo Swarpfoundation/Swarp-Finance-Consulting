@@ -28,8 +28,8 @@ export function TrainingCategories() {
         <SectionHeader
           align="center"
           eyebrow="Percorsi"
-          title="Formazione concreta, moderna, finanziabile quando i requisiti lo consentono."
-          text="Le aree vengono scelte in base ai fabbisogni reali dell'azienda e alla coerenza con fondo, avviso e piano."
+          title="Si può finanziare qualsiasi formazione utile alla tua azienda."
+          text="Obbligatoria, professionalizzante o di settore: i fondi interprofessionali coprono tutte le aree previste dalla normativa."
         />
 
         {/* Filter tabs */}

@@ -35,27 +35,14 @@ export function ProcessSection() {
               Metodo operativo
             </p>
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight md:text-5xl">
-              Dal contributo al piano:{" "}
+              Dal primo contatto alla rendicontazione,{" "}
               <span className="font-display italic font-normal text-brand-700">
-                una regia chiara.
+                ce ne occupiamo noi.
               </span>
             </h2>
             <p className="mt-5 max-w-md text-pretty text-lg leading-8 text-slate-600">
-              Ogni passaggio e progettato per ridurre attrito tra azienda, consulente del lavoro,
-              fondo e partner formativi.
+              Sette passaggi operativi: tu pensi alla tua azienda, della burocrazia ci occupiamo noi.
             </p>
-
-            <div className="mt-10 hidden rounded-2xl border border-slate-200 bg-white/70 p-5 shadow-[0_24px_60px_rgba(15,23,42,0.06)] backdrop-blur lg:block">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                Tempistiche indicative
-              </p>
-              <p className="mt-3 font-display text-3xl leading-none tracking-tight text-slate-900">
-                3–8 <span className="text-brand-700">settimane</span>
-              </p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Variabile in base a fondo, piano e procedure applicabili.
-              </p>
-            </div>
           </motion.div>
 
           <div ref={timelineRef} className="relative">

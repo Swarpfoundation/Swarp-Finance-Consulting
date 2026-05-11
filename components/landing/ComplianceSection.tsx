@@ -10,17 +10,18 @@ export function ComplianceSection() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold-200">
-              Chiarezza istituzionale
+              Come funziona davvero
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
-              Supporto consulenziale, non ente pubblico.
+              Fondi interprofessionali, non bandi pubblici.
             </h2>
             <p className="mt-5 max-w-5xl text-lg leading-8 text-ink-100">
-              Swarp Finance Consulting non e un ente pubblico, INPS o Ministero del Lavoro. Il servizio
-              consiste in supporto consulenziale B2B, progettazione formativa, coordinamento operativo
-              e gestione documentale. Dove richiesto, la gestione puo coinvolgere enti o partner
-              accreditati. L&apos;accesso dipende sempre da fondo scelto, requisiti aziendali, avvisi
-              disponibili, procedure applicabili e approvazione del piano.
+              I fondi interprofessionali nascono dallo 0,30% di contributi obbligatori che ogni
+              azienda versa per la formazione continua. Sono raccolti dall&apos;INPS, regolati dal
+              Ministero del Lavoro e gestiti da fondi legati alle parti sociali (es. Confindustria,
+              sindacati). Non sono bandi regionali o comunali. Swarp è un partner consulenziale B2B
+              che rende accessibile lo strumento alle PMI: ci occupiamo dell&apos;iscrizione al fondo,
+              della definizione dei corsi e di tutta la burocrazia.
             </p>
           </div>
         </div>

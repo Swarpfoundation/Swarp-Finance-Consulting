@@ -9,12 +9,12 @@ export function EligibilitySection() {
         <div>
           <SectionHeader
             eyebrow="Aziende"
-            title="Pensato per PMI, attivita locali e imprese in crescita."
-            text="La possibilita di accesso viene verificata caso per caso. Il servizio e pensato soprattutto per aziende private con almeno un dipendente."
+            title="Per tutte le aziende private con almeno 1 dipendente."
+            text="Le ore di formazione finanziabili variano in base alla dimensione: ~50 per le micro, ~100 per le piccole, ~200 per le medie. Le grandi imprese accedono a più fondi."
           />
           <div className="mt-8 rounded-[1.75rem] border border-amber-200 bg-amber-50 p-5 text-sm leading-7 text-amber-950">
-            La valutazione preliminare non costituisce promessa di finanziamento. Ogni percorso resta
-            soggetto a requisiti, avvisi disponibili, procedure e approvazione.
+            Le ore indicate sono orientative: il numero esatto dipende dal fondo specifico, dal
+            settore e dalla composizione del personale. La verifica puntuale la facciamo insieme.
           </div>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">

@@ -25,11 +25,11 @@ export function FAQ() {
           <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
             Domande frequenti,{" "}
             <span className="font-display italic font-normal text-brand-300">
-              senza promesse ambigue.
+              risposte dirette.
             </span>
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-ink-100">
-            La comunicazione resta prudente: ogni percorso dipende da requisiti e approvazioni.
+            Tutto quello che serve sapere sui fondi interprofessionali, senza giri di parole.
           </p>
 
           <ul className="mt-12 divide-y divide-white/10 border-t border-white/10">
@@ -96,17 +96,17 @@ export function FAQ() {
                 Hai altre domande?
               </p>
               <h3 className="mt-5 font-display text-3xl italic leading-snug text-white">
-                Ti rispondiamo direttamente.
+                Te lo spieghiamo direttamente.
               </h3>
               <p className="mt-4 text-sm leading-7 text-ink-100">
-                Compila una verifica preliminare: in pochi minuti raccogliamo i dati per capire se
-                ha senso procedere.
+                Compila la verifica fondo: in pochi minuti raccogliamo i dati per dirti quanto ti
+                spetta e cosa puoi finanziare.
               </p>
               <Link
                 href="#contatti"
                 className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-300 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-brand-200"
               >
-                Richiedi valutazione
+                Verifica gratuita
                 <ArrowUpRight className="size-4" aria-hidden="true" />
               </Link>
             </div>
@@ -117,8 +117,8 @@ export function FAQ() {
               Trasparenza
             </p>
             <p className="mt-4 text-sm leading-7 text-ink-100">
-              Non siamo un ente pubblico, INPS o Ministero del Lavoro. Operiamo come supporto
-              consulenziale B2B, con coordinamento e gestione documentale.
+              Swarp non sostituisce INPS o Ministero del Lavoro. Siamo un partner consulenziale B2B
+              che gestisce per te iscrizione al fondo, definizione dei corsi e burocrazia.
             </p>
           </div>
         </aside>

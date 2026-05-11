@@ -9,10 +9,10 @@ import { proofPoints } from "./data";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
 const heroSteps = [
-  ["01", "Contributi", "posizione e fondo da verificare"],
-  ["02", "Piano", "obiettivi, corsi, calendario"],
-  ["03", "Approvazione", "soggetta a requisiti e procedure"],
-  ["04", "Formazione", "erogazione e documenti"],
+  ["01", "Iscrizione", "adesione al fondo via portale INPS (1–1,5 mesi)"],
+  ["02", "Definizione", "corsi e obiettivi scelti insieme"],
+  ["03", "Erogazione", "teoria e training on the job"],
+  ["04", "Rendicontazione", "burocrazia gestita da Swarp"],
 ] as const;
 
 export function Hero() {
@@ -64,31 +64,32 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-300 opacity-60" />
               <span className="relative inline-flex size-2 rounded-full bg-brand-300 shadow-[0_0_20px_rgba(103,232,249,0.9)]" />
             </span>
-            Formazione finanziata B2B
+            Fondi interprofessionali · B2B
           </motion.div>
 
           <motion.h1
             variants={fadeUp}
             className="text-balance text-5xl font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:text-[5.5rem]"
           >
-            Formazione finanziata,{" "}
-            <span className="font-display italic font-normal text-brand-300">resa operativa.</span>
+            Formazione finanziata al 100%,{" "}
+            <span className="font-display italic font-normal text-brand-300">con soldi tuoi.</span>
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-ink-100 md:text-xl"
           >
-            Aiutiamo aziende italiane a trasformare contributi gia versati in percorsi concreti di
-            crescita: AI, digitale, sicurezza, vendite, lingue e competenze operative.
+            Ogni azienda versa lo 0,30% dei contributi per la formazione continua dei propri
+            dipendenti. Se non li usi, tornano all&apos;INPS. Swarp li recupera, li trasforma in
+            corsi reali per la tua squadra e gestisce tutta la burocrazia.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
             <CtaButton href="#contatti">
-              Verifica la tua azienda <ArrowRight size={18} aria-hidden="true" />
+              Verifica il tuo fondo <ArrowRight size={18} aria-hidden="true" />
             </CtaButton>
             <CtaButton href="#metodo" variant="secondary">
-              Esplora il metodo
+              Scopri il metodo
             </CtaButton>
           </motion.div>
 
@@ -122,9 +123,9 @@ export function Hero() {
             <div className="mb-6 flex items-start justify-between gap-5">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.26em] text-brand-200">
-                  Operational view
+                  Come funziona
                 </p>
-                <h2 className="mt-2 text-2xl font-semibold text-white">Percorso di attivazione</h2>
+                <h2 className="mt-2 text-2xl font-semibold text-white">Dal contatto al rendiconto</h2>
               </div>
               <div className="rounded-full border border-gold-200/25 bg-gold-200/10 p-3">
                 <ShieldAlert className="size-5 text-gold-200" aria-hidden="true" />
@@ -145,8 +146,8 @@ export function Hero() {
             </div>
 
             <p className="mt-5 rounded-2xl border border-gold-200/20 bg-gold-200/10 p-4 text-[11px] uppercase leading-6 tracking-[0.18em] text-gold-200/85">
-              Non e denaro gratuito: accesso e approvazione dipendono da fondo, avvisi, requisiti e
-              piano formativo.
+              Non sono bandi regionali. Sono fondi interprofessionali raccolti dall&apos;INPS e
+              regolati dal Ministero del Lavoro.
             </p>
           </div>
         </motion.div>
