@@ -15,7 +15,23 @@ const structuredData = {
   ],
   parentOrganization: {
     "@type": "Organization",
-    name: "Swarp Foundation",
+    name: "Swarp Foundation S.r.l.",
+    legalName: "Swarp Foundation S.r.l.",
+    email: "info@swarppay.com",
+    vatID: "14284090967",
+    taxID: "14284090967",
+    identifier: [
+      { "@type": "PropertyValue", propertyID: "REA", value: "MI-2771688" },
+      { "@type": "PropertyValue", propertyID: "Registro Imprese", value: "14284090967" },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Viale Tunisia 22",
+      postalCode: "20124",
+      addressLocality: "Milano",
+      addressRegion: "MI",
+      addressCountry: "IT",
+    },
   },
 };
 
