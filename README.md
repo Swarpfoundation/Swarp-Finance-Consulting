@@ -1,6 +1,6 @@
-# Swarp Finance Consulting
+# Swarp Consulting
 
-Marketing website for Swarp Finance Consulting, a B2B Italian service supporting companies with funded employee training through Fondi Interprofessionali.
+Marketing website for Swarp Consulting, a B2B Italian service supporting companies with funded employee training through Fondi Interprofessionali.
 
 ## Local development
 

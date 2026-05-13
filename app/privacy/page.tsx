@@ -7,7 +7,7 @@ import { Footer } from "@/components/landing/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Informativa privacy di Swarp Foundation S.r.l. — Swarp Finance Consulting: dati raccolti, finalità, diritti dell'interessato ai sensi del Regolamento UE 2016/679 (GDPR).",
+    "Informativa privacy di Swarp Foundation S.r.l. — Swarp Consulting: dati raccolti, finalità, diritti dell'interessato ai sensi del Regolamento UE 2016/679 (GDPR).",
 };
 
 const lastUpdated = "13 maggio 2026";
@@ -34,9 +34,9 @@ export default function PrivacyPolicyPage() {
             </h1>
             <p className="mt-5 text-pretty text-base leading-7 text-ink-100">
               Questa informativa spiega come Swarp Foundation S.r.l. — il soggetto che gestisce il
-              sito swarpfinanceconsulting.com e il servizio Swarp Finance Consulting — tratta i dati
-              personali raccolti tramite il sito, ai sensi del Regolamento UE 2016/679 («GDPR») e
-              del D.Lgs. 196/2003, come modificato dal D.Lgs. 101/2018.
+              sito www.swarpconsulting.com e il servizio Swarp Consulting — tratta i dati personali
+              raccolti tramite il sito, ai sensi del Regolamento UE 2016/679 («GDPR») e del D.Lgs.
+              196/2003, come modificato dal D.Lgs. 101/2018.
             </p>
             <p className="mt-3 text-sm leading-6 text-ink-200">
               Versione 1.0 — ultimo aggiornamento: {lastUpdated}.

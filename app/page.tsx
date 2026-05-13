@@ -3,9 +3,9 @@ import { PremiumLanding } from "@/components/PremiumLanding";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Swarp Finance Consulting",
+  name: "Swarp Consulting",
   description:
-    "Swarp Finance Consulting offre percorsi di formazione finanziata su misura per sviluppare le competenze del team e far crescere le aziende italiane. Gestione dei fondi interprofessionali Formazienda e FonARCom e di tutta la burocrazia.",
+    "Swarp Consulting offre percorsi di formazione finanziata su misura per sviluppare le competenze del team e far crescere le aziende italiane. Gestione dei fondi interprofessionali Formazienda e FonARCom e di tutta la burocrazia.",
   areaServed: "IT",
   serviceType: [
     "Formazione finanziata",

@@ -19,7 +19,7 @@ export function Footer() {
             <div className="flex items-center gap-4">
               <Image
                 src="/swarp-finance-consulting-logo.png"
-                alt="Swarp Finance Consulting"
+                alt="Swarp Consulting"
                 width={160}
                 height={160}
                 className="h-16 w-auto object-contain"
@@ -29,7 +29,7 @@ export function Footer() {
                   Swarp
                 </p>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-ink-200">
-                  Finance Consulting
+                  Consulting
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export function Footer() {
                 <span className="italic text-brand-200">S.r.l.</span>
               </p>
               <p className="mt-2 text-sm text-ink-200">
-                Swarp Finance Consulting è un servizio di Swarp Foundation S.r.l.
+                Swarp Consulting è un servizio di Swarp Foundation S.r.l.
               </p>
             </div>
             <a

@@ -31,7 +31,7 @@ export function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
-        <Link href="#" className="flex items-center gap-3" aria-label="Swarp Finance Consulting home">
+        <Link href="#" className="flex items-center gap-3" aria-label="Swarp Consulting home">
           <motion.div
             animate={{ scale: scrolled ? 0.92 : 1 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -39,7 +39,7 @@ export function Header() {
           >
             <Image
               src="/swarp-finance-consulting-logo.png"
-              alt="Swarp Finance Consulting"
+              alt="Swarp Consulting"
               width={96}
               height={96}
               className="size-12 object-contain md:size-14"
@@ -48,7 +48,7 @@ export function Header() {
           </motion.div>
           <span className="hidden max-w-44 text-[11px] font-semibold uppercase leading-tight tracking-[0.22em] text-white sm:block">
             Swarp
-            <span className="block text-ink-200">Finance Consulting</span>
+            <span className="block text-ink-200">Consulting</span>
           </span>
         </Link>
 

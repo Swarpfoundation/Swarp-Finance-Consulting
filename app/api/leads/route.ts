@@ -22,7 +22,7 @@ export async function POST(request: Request) {
   }
 
   if (process.env.NODE_ENV === "development") {
-    console.info("Swarp Finance Consulting contact form", {
+    console.info("Swarp Consulting contact form", {
       ...result.data,
       receivedAt: new Date().toISOString(),
     });

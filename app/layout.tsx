@@ -11,18 +11,18 @@ const instrumentSerif = Instrument_Serif({
   display: "swap",
 });
 
-const title = "Swarp Finance Consulting | Formazione finanziata per la tua azienda";
+const title = "Swarp Consulting | Formazione finanziata per la tua azienda";
 const description =
   "Offriamo percorsi di formazione finanziata su misura per sviluppare le competenze del tuo team e far crescere la tua azienda. Gestione dei fondi e della burocrazia inclusa.";
 
 export const metadata: Metadata = {
   title: {
     default: title,
-    template: "%s | Swarp Finance Consulting",
+    template: "%s | Swarp Consulting",
   },
   description,
-  metadataBase: new URL("https://swarpfinanceconsulting.com"),
-  applicationName: "Swarp Finance Consulting",
+  metadataBase: new URL("https://www.swarpconsulting.com"),
+  applicationName: "Swarp Consulting",
   category: "business",
   keywords: [
     "formazione finanziata",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     "AI per aziende",
     "corsi di lingua per aziende",
   ],
-  authors: [{ name: "Swarp Finance Consulting" }],
-  creator: "Swarp Finance Consulting",
-  publisher: "Swarp Finance Consulting",
+  authors: [{ name: "Swarp Consulting" }],
+  creator: "Swarp Consulting",
+  publisher: "Swarp Consulting",
   alternates: {
     canonical: "/",
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "it_IT",
     url: "/",
-    siteName: "Swarp Finance Consulting",
+    siteName: "Swarp Consulting",
   },
   twitter: {
     card: "summary_large_image",

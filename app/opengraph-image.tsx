@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Swarp Finance Consulting — Formazione finanziata per la tua azienda";
+export const alt = "Swarp Consulting — Formazione finanziata per la tua azienda";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -53,7 +53,7 @@ export default async function OpengraphImage() {
               color: "#ffffff",
             }}
           >
-            Swarp · Finance Consulting
+            Swarp · Consulting
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export default async function OpengraphImage() {
             zIndex: 1,
           }}
         >
-          <div style={{ fontSize: 22, color: "#8ea0bf" }}>swarpfinanceconsulting.com</div>
+          <div style={{ fontSize: 22, color: "#8ea0bf" }}>www.swarpconsulting.com</div>
           <div
             style={{
               display: "flex",
