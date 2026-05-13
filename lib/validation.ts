@@ -1,26 +1,16 @@
+import { contactRoles, type ContactRole } from "@/components/landing/data";
+
 export type LeadPayload = {
-  fullName: string;
+  firstName: string;
+  lastName: string;
   email: string;
   phone: string;
-  company: string;
-  location: string;
-  employees: string;
-  sector: string;
-  hasConsultant: "yes" | "no" | "";
-  interests: string[];
+  roles: ContactRole[];
   message: string;
   consent: boolean;
 };
 
-const interestOptions = new Set([
-  "Sicurezza obbligatoria",
-  "Marketing e vendite",
-  "AI e digitale",
-  "Lingue",
-  "Gestione aziendale",
-  "Formazione di settore",
-  "Altro",
-]);
+const roleSet = new Set<ContactRole>(contactRoles);
 
 export function validateLeadPayload(input: unknown): {
   valid: boolean;
@@ -31,13 +21,10 @@ export function validateLeadPayload(input: unknown): {
   const errors: Partial<Record<keyof LeadPayload, string>> = {};
 
   const requiredText: Array<keyof LeadPayload> = [
-    "fullName",
+    "firstName",
+    "lastName",
     "email",
-    "phone",
-    "company",
-    "location",
-    "employees",
-    "sector",
+    "message",
   ];
 
   for (const key of requiredText) {
@@ -55,19 +42,18 @@ export function validateLeadPayload(input: unknown): {
 
   if (
     typeof data.phone === "string" &&
+    data.phone.trim() &&
     !/^[+()\d\s.-]{7,24}$/.test(data.phone)
   ) {
     errors.phone = "Inserisci un numero di telefono valido";
   }
 
-  if (data.hasConsultant !== "yes" && data.hasConsultant !== "no") {
-    errors.hasConsultant = "Seleziona una risposta";
-  }
-
-  if (!Array.isArray(data.interests) || data.interests.length === 0) {
-    errors.interests = "Seleziona almeno un'area";
-  } else if (!data.interests.every((item) => interestOptions.has(item))) {
-    errors.interests = "Area formativa non valida";
+  if (data.roles !== undefined) {
+    if (!Array.isArray(data.roles)) {
+      errors.roles = "Selezione non valida";
+    } else if (!data.roles.every((role) => roleSet.has(role as ContactRole))) {
+      errors.roles = "Selezione non valida";
+    }
   }
 
   if (data.consent !== true) {
@@ -82,16 +68,12 @@ export function validateLeadPayload(input: unknown): {
     valid: true,
     errors: {},
     data: {
-      fullName: data.fullName!.trim(),
+      firstName: data.firstName!.trim(),
+      lastName: data.lastName!.trim(),
       email: data.email!.trim(),
-      phone: data.phone!.trim(),
-      company: data.company!.trim(),
-      location: data.location!.trim(),
-      employees: data.employees!.trim(),
-      sector: data.sector!.trim(),
-      hasConsultant: data.hasConsultant!,
-      interests: data.interests!,
-      message: typeof data.message === "string" ? data.message.trim() : "",
+      phone: typeof data.phone === "string" ? data.phone.trim() : "",
+      roles: Array.isArray(data.roles) ? (data.roles as ContactRole[]) : [],
+      message: data.message!.trim(),
       consent: true,
     },
   };

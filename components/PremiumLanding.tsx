@@ -1,5 +1,3 @@
-import { ComplianceSection } from "./landing/ComplianceSection";
-import { EligibilitySection } from "./landing/EligibilitySection";
 import { FAQ } from "./landing/FAQ";
 import { Footer } from "./landing/Footer";
 import { Header } from "./landing/Header";
@@ -18,8 +16,6 @@ export function PremiumLanding() {
         <WhySwarp />
         <ProcessSection />
         <TrainingCategories />
-        <EligibilitySection />
-        <ComplianceSection />
         <FAQ />
         <LeadAssessment />
       </main>

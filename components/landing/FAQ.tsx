@@ -23,13 +23,13 @@ export function FAQ() {
             FAQ
           </p>
           <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
-            Domande frequenti,{" "}
+            Domande{" "}
             <span className="font-display italic font-normal text-brand-300">
-              risposte dirette.
+              frequenti.
             </span>
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-ink-100">
-            Tutto quello che serve sapere sui fondi interprofessionali, senza giri di parole.
+            Tutto quello che ti serve sapere sulla formazione finanziata.
           </p>
 
           <ul className="mt-12 divide-y divide-white/10 border-t border-white/10">
@@ -96,30 +96,20 @@ export function FAQ() {
                 Hai altre domande?
               </p>
               <h3 className="mt-5 font-display text-3xl italic leading-snug text-white">
-                Te lo spieghiamo direttamente.
+                Contattaci.
               </h3>
               <p className="mt-4 text-sm leading-7 text-ink-100">
-                Compila la verifica fondo: in pochi minuti raccogliamo i dati per dirti quanto ti
-                spetta e cosa puoi finanziare.
+                Compila il questionario qui in fondo: risponderemo a tutte le tue domande e ti
+                diremo quali sono i corsi più adatti per la tua azienda.
               </p>
               <Link
                 href="#contatti"
                 className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-300 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-brand-200"
               >
-                Verifica gratuita
+                Contattaci
                 <ArrowUpRight className="size-4" aria-hidden="true" />
               </Link>
             </div>
-          </div>
-
-          <div className="mt-4 rounded-[2rem] border border-white/10 bg-white/[0.03] p-7">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
-              Trasparenza
-            </p>
-            <p className="mt-4 text-sm leading-7 text-ink-100">
-              Swarp non sostituisce INPS o Ministero del Lavoro. Siamo un partner consulenziale B2B
-              che gestisce per te iscrizione al fondo, definizione dei corsi e burocrazia.
-            </p>
           </div>
         </aside>
       </div>

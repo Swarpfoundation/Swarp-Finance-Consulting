@@ -28,8 +28,8 @@ export function TrainingCategories() {
         <SectionHeader
           align="center"
           eyebrow="Percorsi"
-          title="Si può finanziare qualsiasi formazione utile alla tua azienda."
-          text="Obbligatoria, professionalizzante o di settore: i fondi interprofessionali coprono tutte le aree previste dalla normativa."
+          title="Puoi finanziare tutta la formazione utile alla tua azienda."
+          text="Dalla formazione obbligatoria a quella professionalizzante o settoriale: i fondi sostengono qualsiasi tipologia di formazione."
         />
 
         {/* Filter tabs */}

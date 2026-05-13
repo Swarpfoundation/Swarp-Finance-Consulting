@@ -32,16 +32,16 @@ export function ProcessSection() {
             className="lg:sticky lg:top-32 lg:h-fit"
           >
             <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.32em] text-brand-700">
-              Metodo operativo
+              Come funziona
             </p>
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight md:text-5xl">
-              Dal primo contatto alla rendicontazione,{" "}
+              Dalla raccolta dei documenti all&apos;avvio dei corsi,{" "}
               <span className="font-display italic font-normal text-brand-700">
-                ce ne occupiamo noi.
+                gestiamo ogni fase per te.
               </span>
             </h2>
             <p className="mt-5 max-w-md text-pretty text-lg leading-8 text-slate-600">
-              Sette passaggi operativi: tu pensi alla tua azienda, della burocrazia ci occupiamo noi.
+              Concentrati sulla crescita della tua azienda, a tutto il resto pensiamo noi.
             </p>
           </motion.div>
 

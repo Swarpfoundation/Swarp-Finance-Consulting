@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Swarp Finance Consulting — Formazione finanziata al 100% con i fondi interprofessionali";
+export const alt = "Swarp Finance Consulting — Formazione finanziata per la tua azienda";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -84,7 +84,7 @@ export default async function OpengraphImage() {
                 boxShadow: "0 0 12px rgba(103,232,249,0.9)",
               }}
             />
-            Fondi interprofessionali · B2B
+            Formazione finanziata · B2B
           </div>
 
           <div
@@ -97,14 +97,14 @@ export default async function OpengraphImage() {
               maxWidth: 1000,
             }}
           >
-            Formazione finanziata al 100%,{" "}
+            Formazione finanziata{" "}
             <span style={{ color: "#67e8f9", fontStyle: "italic", fontWeight: 500 }}>
-              con soldi tuoi.
+              per la tua azienda.
             </span>
           </div>
 
           <div style={{ fontSize: 28, color: "#c7d3e6", maxWidth: 900, lineHeight: 1.4 }}>
-            Recuperiamo i fondi interprofessionali della tua azienda. Burocrazia gestita.
+            Percorsi di formazione finanziata su misura per sviluppare le competenze del tuo team.
           </div>
         </div>
 

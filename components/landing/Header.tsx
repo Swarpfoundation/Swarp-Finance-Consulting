@@ -67,7 +67,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <CtaButton href="#contatti" className="min-h-10 px-4">
-            Valutazione <ArrowUpRight size={16} aria-hidden="true" />
+            Contattaci <ArrowUpRight size={16} aria-hidden="true" />
           </CtaButton>
         </div>
 
@@ -107,7 +107,7 @@ export function Header() {
                 className="mt-2 rounded-2xl bg-brand-400 px-4 py-3 text-center text-sm font-semibold text-ink-950"
                 onClick={() => setOpen(false)}
               >
-                Richiedi valutazione
+                Contattaci
               </Link>
             </nav>
           </motion.div>

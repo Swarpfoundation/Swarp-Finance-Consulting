@@ -2,16 +2,15 @@ import {
   BookOpenCheck,
   BrainCircuit,
   BriefcaseBusiness,
-  CheckCircle2,
-  ClipboardCheck,
-  FileCheck2,
   Flame,
+  Globe,
+  HeartPulse,
   Languages,
   MonitorCog,
   Network,
+  PencilRuler,
   Route,
   Shield,
-  ShieldAlert,
   Sparkles,
   Store,
   Utensils,
@@ -21,63 +20,50 @@ import {
 export const navItems = [
   { label: "Metodo", href: "#metodo" },
   { label: "Corsi", href: "#corsi" },
-  { label: "Aziende", href: "#aziende" },
   { label: "FAQ", href: "#faq" },
 ];
 
 export const proofPoints = [
-  "Per aziende con almeno 1 dipendente",
+  "Corsi per tutte le aziende",
   "Finanziata al 100% a fondo perduto",
   "Burocrazia gestita da Swarp",
-  "Tutte le aree e tutti i settori",
+  "Corsi per ogni settore e area professionale",
 ];
 
 export const processSteps = [
   {
     icon: Sparkles,
-    label: "Contatto",
-    title: "Spieghiamo il meccanismo",
-    text: "Ti raccontiamo cosa sono i fondi interprofessionali, da dove arrivano e cosa puoi finanziare. Spiegazione semplice, a prova di liceo.",
+    label: "Spiegazione",
+    title: "Spiegazione riguardo il fondo",
+    text: "Ti spieghiamo che cosa sono i fondi interprofessionali, da dove arrivano questi soldi e quale tipo di formazione può essere finanziata.",
   },
   {
     icon: Network,
-    label: "Contatti",
-    title: "Raccolta riferimenti",
-    text: "Ci colleghiamo con il titolare e con il consulente del lavoro per coordinare insieme i passaggi successivi.",
-  },
-  {
-    icon: FileCheck2,
-    label: "Informativa",
-    title: "Email con la documentazione",
-    text: "Ricevi una mail con la spiegazione completa, in versione semplice e tecnica, con i link alle fonti ufficiali (Ministero del Lavoro, INPS).",
+    label: "Raccolta",
+    title: "Raccolta documenti e dati",
+    text: "Raccogliamo i dati del titolare dell'azienda, del consulente del lavoro e richiediamo tutti i documenti necessari.",
   },
   {
     icon: Shield,
     label: "Iscrizione",
-    title: "Adesione al fondo",
-    text: "Il consulente del lavoro iscrive l'azienda al fondo tramite portale INPS. Tempo medio: 1 – 1,5 mesi.",
+    title: "Iscrizione al fondo",
+    text: "Dopo aver ottenuto tutta la documentazione necessaria, procediamo con l'iscrizione al fondo tramite il portale dell'INPS.",
   },
   {
     icon: Route,
     label: "Definizione",
-    title: "Piano formativo",
-    text: "Scegliamo insieme tipologia di corsi e obiettivi: formazione teorica e training on the job in azienda.",
+    title: "Definizione del piano formativo",
+    text: "Decidiamo insieme a te i corsi da svolgere e gli obiettivi da raggiungere.",
   },
   {
     icon: BookOpenCheck,
     label: "Avvio",
-    title: "Partenza corsi",
-    text: "Dopo l'attivazione del fondo, parte la formazione. Tu pensi all'azienda, ai docenti e ai materiali ci pensiamo noi.",
-  },
-  {
-    icon: ClipboardCheck,
-    label: "Rendicontazione",
-    title: "Burocrazia gestita",
-    text: "Registri, presenze, documenti e chiusura: Swarp si occupa di tutta la parte burocratica fino alla rendicontazione.",
+    title: "Avvio dei corsi",
+    text: "Una volta iscritti al fondo, sarà possibile iniziare la formazione.",
   },
 ];
 
-export type TrainingTag = "digitale" | "commerciale" | "sicurezza" | "operations" | "lingue";
+export type TrainingTag = "obbligatorio" | "professionalizzante" | "settoriale";
 
 export const trainingCategories: {
   icon: typeof BrainCircuit;
@@ -89,136 +75,129 @@ export const trainingCategories: {
   {
     icon: Shield,
     title: "Sicurezza sul lavoro",
-    text: "D.Lgs 81/08 e tutti gli obblighi di legge. Formazione obbligatoria, finanziabile al 100%.",
-    tag: "sicurezza",
+    text: "D.Lgs 81/08 e tutti gli obblighi di legge in materia di salute e sicurezza in azienda.",
+    tag: "obbligatorio",
     featured: true,
   },
   {
     icon: Flame,
-    title: "Antincendio e primo soccorso",
-    text: "Percorsi obbligatori, aggiornamenti periodici e cultura della prevenzione in azienda.",
-    tag: "sicurezza",
+    title: "Antincendio",
+    text: "Formazione antincendio per addetti, aggiornamenti periodici e prevenzione in azienda.",
+    tag: "obbligatorio",
+  },
+  {
+    icon: HeartPulse,
+    title: "Primo soccorso",
+    text: "Corsi obbligatori per addetti al primo soccorso, con aggiornamenti periodici.",
+    tag: "obbligatorio",
   },
   {
     icon: BriefcaseBusiness,
-    title: "Marketing e vendite",
-    text: "Branding, vendite, negoziazione e gestione del cliente: le competenze che portano fatturato.",
-    tag: "commerciale",
+    title: "Marketing e branding",
+    text: "Posizionamento, comunicazione e branding per costruire la presenza dell'azienda.",
+    tag: "professionalizzante",
     featured: true,
   },
   {
-    icon: BrainCircuit,
-    title: "Intelligenza artificiale",
-    text: "Strumenti generativi, automazioni e casi d'uso pratici per ridurre tempi e costi.",
-    tag: "digitale",
-    featured: true,
-  },
-  {
-    icon: MonitorCog,
-    title: "Excel e digitale",
-    text: "Excel, siti web, strumenti digitali e produttività operativa per chi lavora ogni giorno.",
-    tag: "digitale",
+    icon: Sparkles,
+    title: "Vendite",
+    text: "Tecniche di vendita, negoziazione e gestione del cliente per il team commerciale.",
+    tag: "professionalizzante",
   },
   {
     icon: Wrench,
     title: "Gestione aziendale",
     text: "Organizzazione, processi e gestione del personale e dell'attività quotidiana.",
-    tag: "operations",
+    tag: "professionalizzante",
   },
   {
-    icon: Languages,
-    title: "Lingue",
-    text: "Inglese business per il commerciale e italiano operativo per il personale straniero.",
-    tag: "lingue",
+    icon: MonitorCog,
+    title: "Excel",
+    text: "Fogli di calcolo, formule e analisi dei dati per chi lavora ogni giorno con Excel.",
+    tag: "professionalizzante",
+  },
+  {
+    icon: Globe,
+    title: "Siti web",
+    text: "Creazione e gestione di siti web aziendali, e-commerce e presenza digitale.",
+    tag: "professionalizzante",
+  },
+  {
+    icon: BrainCircuit,
+    title: "Intelligenza artificiale",
+    text: "Strumenti generativi, automazioni e casi d'uso pratici per ridurre tempi e costi.",
+    tag: "professionalizzante",
     featured: true,
   },
   {
-    icon: Utensils,
-    title: "Ristorazione e hospitality",
-    text: "Bartender, mixology, gestione staff e servizio clienti per ristoranti, hotel e bar.",
-    tag: "operations",
+    icon: Languages,
+    title: "Corsi di lingua",
+    text: "Inglese per il business e italiano operativo per il personale straniero.",
+    tag: "professionalizzante",
     featured: true,
   },
   {
     icon: Store,
-    title: "Palestre e centri sportivi",
+    title: "Palestre",
     text: "Formazione istruttori e personal trainer, gestione clienti e organizzazione del centro.",
-    tag: "operations",
+    tag: "settoriale",
+    featured: true,
+  },
+  {
+    icon: Utensils,
+    title: "Ristorazione",
+    text: "Bartender e mixology, gestione staff e servizio clienti per ristoranti, hotel e bar.",
+    tag: "settoriale",
+    featured: true,
+  },
+  {
+    icon: PencilRuler,
+    title: "Tecnica di settore",
+    text: "Formazione tecnica specifica per ogni settore, costruita sui fabbisogni reali dell'azienda.",
+    tag: "settoriale",
   },
 ];
 
 export const trainingFilters: { id: "all" | TrainingTag; label: string }[] = [
   { id: "all", label: "Tutti" },
-  { id: "digitale", label: "Digitale & AI" },
-  { id: "commerciale", label: "Commerciale" },
-  { id: "sicurezza", label: "Sicurezza" },
-  { id: "operations", label: "Operations" },
-  { id: "lingue", label: "Lingue" },
-];
-
-export const targetCustomers = [
-  "Micro imprese — fino a 10 dipendenti",
-  "Piccole imprese — oltre 10 dipendenti",
-  "Medie imprese — oltre 50 dipendenti",
-  "Grandi imprese — accesso a più fondi",
-  "Studi professionali",
-  "Ristorazione, hotel e bar",
-  "Palestre e centri sportivi",
-  "Retail, servizi e produzione",
+  { id: "obbligatorio", label: "Obbligatori" },
+  { id: "professionalizzante", label: "Professionalizzanti" },
+  { id: "settoriale", label: "Settoriali" },
 ];
 
 export const faqItems = [
   {
-    q: "È formazione gratuita?",
-    a: "No. È formazione finanziata al 100% a fondo perduto. La differenza è importante: i fondi non sono un regalo, sono soldi che la tua azienda ha già versato sotto forma di contributi obbligatori.",
+    q: "La formazione è gratuita?",
+    a: "La formazione è finanziata: il fondo verrà gestito da Swarp per finanziare i percorsi formativi di cui hai bisogno.",
   },
   {
-    q: "Da dove arrivano questi fondi?",
-    a: "Dallo 0,30% dei contributi che ogni azienda versa per ciascun dipendente. L'INPS li raccoglie e li trasferisce ai fondi interprofessionali, regolati dal Ministero del Lavoro.",
+    q: "Quali sono i fondi gestiti da Swarp?",
+    a: "Formazienda e FonARCom.",
   },
   {
-    q: "Cosa succede se non li uso?",
-    a: "Ogni anno i fondi inutilizzati tornano all'INPS. Non rimangono in azienda e non si accumulano: se non li attivi, li perdi. È il motivo principale per cui esiste Swarp.",
+    q: "Cosa succede se non uso questi fondi?",
+    a: "Ogni anno i fondi inutilizzati tornano all'INPS: se non li usi, li perdi.",
   },
   {
-    q: "Quali aziende possono accedere?",
-    a: "Tutte le aziende private con almeno un dipendente. Le ore di formazione finanziabili variano in base alla dimensione: indicativamente 50 per le micro imprese, 100 per le piccole, 200 per le medie. Le grandi imprese accedono a più fondi.",
+    q: "Quali aziende possono accedere ai fondi?",
+    a: "Tutte le aziende private con almeno un dipendente. Le ore di formazione finanziabili variano in base alla dimensione: indicativamente 50 per le micro imprese, 100 per le piccole, 200 per le medie.",
   },
   {
-    q: "Cosa si può finanziare?",
-    a: "Qualsiasi formazione utile per l'azienda: sicurezza obbligatoria (D.Lgs 81/08, antincendio, primo soccorso), professionalizzante (marketing, vendite, gestione, Excel, AI, lingue) e settoriale (ristorazione, palestre, tecnica di settore). Modalità: teoria e training on the job.",
+    q: "Quale tipologia di formazione si può finanziare?",
+    a: "Qualsiasi tipologia di formazione utile per l'azienda: dai corsi obbligatori, come salute e sicurezza sul lavoro (D.Lgs. 81/08), antincendio e primo soccorso, ai percorsi professionalizzanti (marketing, vendite, gestione, Excel, AI, corsi di lingua), fino alla formazione più settoriale (ristorazione, palestre e competenze tecniche di settore).",
   },
   {
-    q: "Quanto tempo serve per partire?",
-    a: "L'iscrizione al fondo tramite portale INPS la gestisce il consulente del lavoro e richiede 1 – 1,5 mesi. Dopo l'attivazione si definiscono insieme i corsi e si parte. La parte burocratica resta in capo a Swarp.",
+    q: "Quanto devo aspettare prima di poter iniziare il corso?",
+    a: "L'iscrizione al fondo richiede circa 1 mese / 1 mese e mezzo. Una volta fatta, si definiscono insieme i corsi necessari e si avvia la formazione. Tutta la parte burocratica è gestita da Swarp.",
   },
 ];
 
-export const trustMetrics: {
-  value: number;
-  suffix: string;
-  label: string;
-  caption: string;
-}[] = [];
+export const contactRoles = [
+  "Azienda",
+  "Consulente del Lavoro",
+  "Commercialista",
+  "Altro",
+] as const;
 
-// Add real client logos by dropping SVGs in /public/logos/
-// and pushing entries like { name: "Cliente", src: "/logos/cliente.svg" }.
-export const partnerLogos: { name: string; src?: string }[] = [];
+export type ContactRole = (typeof contactRoles)[number];
 
-// Add real, compliance-safe testimonials here.
-// Add `photo: "/testimonials/<file>.jpg"` to render a photo instead of the initials chip.
-export const testimonials: {
-  quote: string;
-  name: string;
-  role: string;
-  company: string;
-  sector: string;
-  photo?: string;
-  featured?: boolean;
-}[] = [];
-
-export const assessmentStats = [
-  { icon: Sparkles, label: "Output", value: "Verifica fondo + ore stimate" },
-  { icon: CheckCircle2, label: "Accesso", value: "Aziende con ≥1 dipendente" },
-  { icon: ShieldAlert, label: "Burocrazia", value: "Gestita da Swarp" },
-];

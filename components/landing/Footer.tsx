@@ -34,11 +34,11 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-ink-100">
-              Formazione finanziata al 100% per le PMI italiane.{" "}
+              Formazione finanziata per le aziende italiane:{" "}
               <span className="font-display italic font-normal text-brand-200">
-                Recuperiamo i fondi interprofessionali,
+                ci occupiamo della gestione dei fondi
               </span>{" "}
-              gestiamo la burocrazia.
+              e di tutta la burocrazia.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export function Footer() {
               href="#contatti"
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-300 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-brand-200"
             >
-              Richiedi valutazione
+              Contattaci
               <ArrowUpRight className="size-4" aria-hidden="true" />
             </Link>
           </div>
@@ -139,12 +139,18 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-8 md:flex-row md:items-center md:justify-between">
-          <p className="text-[11px] uppercase tracking-[0.28em] text-ink-300">
-            © {new Date().getFullYear()} Swarp Foundation S.r.l.
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] uppercase tracking-[0.28em] text-ink-300">
+            <p>© {new Date().getFullYear()} Swarp Foundation S.r.l.</p>
+            <Link
+              href="/privacy"
+              className="transition hover:text-brand-200"
+            >
+              Privacy Policy
+            </Link>
+          </div>
           <p className="max-w-xl text-xs leading-6 text-ink-300 md:text-right">
-            Partner consulenziale B2B. I fondi interprofessionali sono regolati dal Ministero del
-            Lavoro e raccolti dall&apos;INPS. Swarp ne gestisce l&apos;attivazione per le PMI.
+            Formazione finanziata per le aziende italiane. Gestione dei fondi interprofessionali e
+            della burocrazia.
           </p>
         </div>
       </div>
