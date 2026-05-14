@@ -8,18 +8,18 @@ import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 const pillars = [
   {
     icon: Compass,
-    title: "Lavoro che ha senso",
-    text: "Aiuti aziende vere a usare strumenti che esistono già ma che quasi nessuno conosce.",
+    title: "Cresci con noi",
+    text: "Lavora in un'azienda dove crescita e risultati vengono realmente valorizzati.",
   },
   {
     icon: Users,
-    title: "Team in costruzione",
-    text: "Siamo all'inizio: chi entra ora avrà voce sulle scelte, sul prodotto e sul modo di lavorare.",
+    title: "Un Team Che Ti Supporta",
+    text: "Entra a far parte di un team dinamico e collaborativo, pronto a supportarti in ogni fase del tuo percorso.",
   },
   {
     icon: Briefcase,
     title: "Formazione interna",
-    text: "Non serve aver già lavorato con i fondi interprofessionali. Ti formiamo noi.",
+    text: "Non serve esperienza previa: riceverai una formazione completa che ti permetterà di acquisire tutte le competenze necessarie.",
   },
 ];
 
@@ -43,16 +43,23 @@ export function CareerSection() {
               Lavora con noi
             </p>
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
-              Stiamo cercando persone{" "}
+              Cerchiamo persone che possano portare valore{" "}
               <span className="font-display italic font-normal text-brand-300">
-                con cui crescere.
+                alla nostra realtà.
               </span>
             </h2>
-            <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-ink-100">
-              Swarp Consulting è un team giovane in costruzione. Cerchiamo persone con voglia di
-              imparare e di costruire qualcosa che ha senso — anche senza esperienza diretta nei
-              fondi interprofessionali.
-            </p>
+            <div className="mt-5 max-w-xl space-y-4 text-pretty text-lg leading-8 text-ink-100">
+              <p>
+                Swarp Consulting è una realtà in continua espansione, composta da un team dinamico
+                e ambizioso. Cerchiamo persone motivate, con voglia di imparare e crescere
+                professionalmente insieme a noi.
+              </p>
+              <p>Non è richiesta esperienza nel settore, ti formiamo noi.</p>
+              <p>
+                Se vuoi entrare a far parte di un ambiente stimolante, orientato alla crescita e
+                ai risultati, unisciti al nostro team.
+              </p>
+            </div>
 
             <Link
               href="mailto:info@swarppay.com?subject=Candidatura%20Swarp%20Consulting"
