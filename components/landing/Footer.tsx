@@ -82,10 +82,10 @@ export function Footer() {
               </p>
             </div>
             <a
-              href="mailto:info@swarppay.com"
+              href="mailto:info@swarpconsulting.com"
               className="inline-flex items-center gap-2 self-start rounded-full border border-white/10 px-4 py-2 text-sm text-ink-100 transition hover:border-brand-400/45 hover:text-white md:self-end"
             >
-              info@swarppay.com
+              info@swarpconsulting.com
               <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>
           </div>
@@ -126,10 +126,10 @@ export function Footer() {
               <dd className="mt-3 space-y-1 text-sm leading-6 text-white">
                 <p>
                   <a
-                    href="mailto:info@swarppay.com"
+                    href="mailto:info@swarpconsulting.com"
                     className="text-brand-200 underline-offset-4 transition hover:text-brand-100 hover:underline"
                   >
-                    info@swarppay.com
+                    info@swarpconsulting.com
                   </a>
                 </p>
                 <p className="text-ink-200">Supporto B2B</p>

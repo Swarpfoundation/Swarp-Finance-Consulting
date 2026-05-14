@@ -62,7 +62,7 @@ export function CareerSection() {
             </div>
 
             <Link
-              href="mailto:info@swarppay.com?subject=Candidatura%20Swarp%20Consulting"
+              href="mailto:info@swarpconsulting.com?subject=Candidatura%20Swarp%20Consulting"
               className="mt-9 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-semibold text-slate-950 shadow-[0_20px_80px_rgba(255,255,255,0.18)] transition hover:bg-brand-300"
             >
               Invia la tua candidatura
@@ -73,9 +73,9 @@ export function CareerSection() {
               Scrivici a{" "}
               <a
                 className="text-brand-200 underline-offset-4 hover:text-brand-100 hover:underline"
-                href="mailto:info@swarppay.com"
+                href="mailto:info@swarpconsulting.com"
               >
-                info@swarppay.com
+                info@swarpconsulting.com
               </a>{" "}
               allegando CV e una breve presentazione. Ti rispondiamo entro pochi giorni.
             </p>

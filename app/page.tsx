@@ -18,7 +18,7 @@ const structuredData = {
     "@type": "Organization",
     name: "Swarp Foundation S.r.l.",
     legalName: "Swarp Foundation S.r.l.",
-    email: "info@swarppay.com",
+    email: "info@swarpconsulting.com",
     vatID: "14284090967",
     taxID: "14284090967",
     identifier: [

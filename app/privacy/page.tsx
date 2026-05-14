@@ -53,9 +53,9 @@ export default function PrivacyPolicyPage() {
                 Email:{" "}
                 <a
                   className="text-brand-200 underline-offset-4 hover:text-brand-100 hover:underline"
-                  href="mailto:info@swarppay.com"
+                  href="mailto:info@swarpconsulting.com"
                 >
-                  info@swarppay.com
+                  info@swarpconsulting.com
                 </a>
               </p>
             </div>
@@ -265,9 +265,9 @@ export default function PrivacyPolicyPage() {
               Per esercitare uno qualunque di questi diritti puoi scrivere a{" "}
               <a
                 className="text-brand-200 underline-offset-4 hover:text-brand-100 hover:underline"
-                href="mailto:info@swarppay.com"
+                href="mailto:info@swarpconsulting.com"
               >
-                info@swarppay.com
+                info@swarpconsulting.com
               </a>
               . Ti risponderemo nei termini previsti dall&apos;art. 12 GDPR, di norma entro un mese
               dalla ricezione della richiesta.
@@ -313,9 +313,9 @@ export default function PrivacyPolicyPage() {
               personali puoi scrivere a{" "}
               <a
                 className="font-semibold text-brand-200 underline-offset-4 hover:text-brand-100 hover:underline"
-                href="mailto:info@swarppay.com"
+                href="mailto:info@swarpconsulting.com"
               >
-                info@swarppay.com
+                info@swarpconsulting.com
               </a>
               .
             </p>
