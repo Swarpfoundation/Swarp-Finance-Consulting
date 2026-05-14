@@ -18,7 +18,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-4">
               <Image
-                src="/swarp-finance-consulting-logo.png"
+                src="/swarp_consulting_transparent.png"
                 alt="Swarp Consulting"
                 width={160}
                 height={160}

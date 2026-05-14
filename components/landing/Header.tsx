@@ -38,7 +38,7 @@ export function Header() {
             className="relative"
           >
             <Image
-              src="/swarp-finance-consulting-logo.png"
+              src="/swarp_consulting_transparent.png"
               alt="Swarp Consulting"
               width={96}
               height={96}

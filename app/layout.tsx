@@ -71,8 +71,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/swarp-finance-consulting-logo.png",
-    apple: "/swarp-finance-consulting-logo.png",
+    icon: "/swarp_consulting_transparent.png",
+    apple: "/swarp_consulting_transparent.png",
   },
 };
 
