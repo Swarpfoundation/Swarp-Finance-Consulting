@@ -13,7 +13,7 @@ const pillars = [
   },
   {
     icon: Users,
-    title: "Un Team Che Ti Supporta",
+    title: "Un team che ti supporta",
     text: "Entra a far parte di un team dinamico e collaborativo, pronto a supportarti in ogni fase del tuo percorso.",
   },
   {
@@ -43,7 +43,8 @@ export function CareerSection() {
               Lavora con noi
             </p>
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
-              Cerchiamo persone che possano portare valore{" "}
+              Cerchiamo persone che possano portare{" "}
+              <span className="text-brand-300">valore</span>{" "}
               <span className="font-display italic font-normal text-brand-300">
                 alla nostra realtà.
               </span>
