@@ -20,6 +20,7 @@ import {
 export const navItems = [
   { label: "Metodo", href: "#metodo" },
   { label: "Corsi", href: "#corsi" },
+  { label: "Lavora con noi", href: "#lavora-con-noi" },
   { label: "FAQ", href: "#faq" },
 ];
 
