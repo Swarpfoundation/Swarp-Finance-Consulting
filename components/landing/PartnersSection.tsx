@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
@@ -10,6 +11,7 @@ const partners = [
     alt: "The One Trade Group",
     name: "The One Trade Group",
     description: "Gestione e valorizzazione dei rifiuti al servizio delle imprese.",
+    href: "https://theonetrade.it/",
   },
   {
     src: "/partner-marocco-italia.png",
@@ -17,12 +19,14 @@ const partners = [
     name: "Commercio e Industria Marocco–Italia",
     description:
       "Organismo per la promozione delle relazioni commerciali e industriali tra Marocco e Italia.",
+    href: "https://ccmaroccoitalia.it/",
   },
   {
     src: "/partner-wd-university.png",
     alt: "WD University",
     name: "WD University",
     description: "Polo universitario e formazione accademica in Italia.",
+    href: "https://companywd.com/",
   },
 ];
 
@@ -57,10 +61,14 @@ export function PartnersSection() {
           className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {partners.map((partner) => (
-            <motion.article
+            <motion.a
               key={partner.name}
+              href={partner.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${partner.name} — apri il sito in una nuova scheda`}
               variants={fadeUp}
-              className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 transition hover:border-brand-400/35 md:p-6"
+              className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 transition hover:-translate-y-1 hover:border-brand-400/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 md:p-6"
             >
               <div className="relative h-44 w-full overflow-hidden rounded-2xl bg-white">
                 <Image
@@ -71,11 +79,19 @@ export function PartnersSection() {
                   className="object-contain p-7"
                 />
               </div>
-              <div className="mt-6 flex-1">
-                <h3 className="text-lg font-semibold text-white">{partner.name}</h3>
-                <p className="mt-2 text-pretty leading-7 text-ink-200">{partner.description}</p>
+              <div className="mt-6 flex flex-1 items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-white">{partner.name}</h3>
+                  <p className="mt-2 text-pretty leading-7 text-ink-200">
+                    {partner.description}
+                  </p>
+                </div>
+                <ArrowUpRight
+                  className="mt-1 size-5 shrink-0 text-ink-300 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-300"
+                  aria-hidden="true"
+                />
               </div>
-            </motion.article>
+            </motion.a>
           ))}
         </motion.div>
       </div>
