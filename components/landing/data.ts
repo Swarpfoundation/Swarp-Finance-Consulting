@@ -154,7 +154,7 @@ export const trainingCategories: {
   },
   {
     icon: PencilRuler,
-    title: "Tecnica di settore",
+    title: "Formazione tecnica di settore",
     text: "Formazione tecnica specifica per ogni settore, costruita sui fabbisogni reali dell'azienda.",
     tag: "settoriale",
   },

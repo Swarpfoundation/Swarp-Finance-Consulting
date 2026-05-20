@@ -10,22 +10,24 @@ const partners = [
     src: "/partner-the-one-trade.png",
     alt: "The One Trade Group",
     name: "The One Trade Group",
-    description: "Gestione e valorizzazione dei rifiuti al servizio delle imprese.",
+    description:
+      "Società che si occupa della produzione e vendita di presse industriali per la compattazione e riduzione del volume dei rifiuti, oltre a sistemi tecnologici avanzati per la bonifica ambientale e il trattamento di acque reflue e rifiuti organici.",
     href: "https://theonetrade.it/",
   },
   {
     src: "/partner-marocco-italia.png",
     alt: "Organismo del Commercio e dell'Industria del Marocco in Italia",
-    name: "Commercio e Industria Marocco–Italia",
+    name: "Organismo del Commercio e dell'Industria del Marocco in Italia",
     description:
-      "Organismo per la promozione delle relazioni commerciali e industriali tra Marocco e Italia.",
+      "Organizzazione dedicata allo sviluppo e al rafforzamento delle relazioni economiche, commerciali e industriali tra Italia e Marocco, favorendo opportunità di collaborazione, investimenti e networking tra imprese dei due Paesi.",
     href: "https://ccmaroccoitalia.it/",
   },
   {
     src: "/partner-wd-university.png",
     alt: "WD University",
     name: "WD University",
-    description: "Polo universitario e formazione accademica in Italia.",
+    description:
+      "Polo universitario e centro di formazione accademica in Italia, dedicato allo sviluppo di percorsi di istruzione superiore e programmi formativi orientati alla crescita professionale e all'innovazione.",
     href: "https://companywd.com/",
   },
 ];
@@ -47,10 +49,6 @@ export function PartnersSection() {
             Le realtà con cui{" "}
             <span className="font-display italic font-normal text-brand-300">collaboriamo.</span>
           </h2>
-          <p className="mt-5 text-pretty text-lg leading-8 text-ink-100">
-            Costruiamo relazioni con organizzazioni e istituzioni che condividono il nostro
-            approccio alla crescita delle imprese.
-          </p>
         </div>
 
         <motion.div
