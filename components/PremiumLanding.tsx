@@ -1,3 +1,4 @@
+import { BandoSection } from "./landing/BandoSection";
 import { CareerSection } from "./landing/CareerSection";
 import { FAQ } from "./landing/FAQ";
 import { Footer } from "./landing/Footer";
@@ -18,6 +19,7 @@ export function PremiumLanding() {
         <WhySwarp />
         <ProcessSection />
         <TrainingCategories />
+        <BandoSection />
         <PartnersSection />
         <CareerSection />
         <FAQ />
