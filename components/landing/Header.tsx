@@ -37,11 +37,11 @@ export function Header() {
             className="relative"
           >
             <Image
-              src="/swarp-consulting-transparent-brand.png"
+              src="/swarp-consulting-header-logo.png"
               alt="Swarp Consulting"
-              width={220}
-              height={92}
-              className="h-12 w-40 object-cover object-center md:h-14 md:w-48"
+              width={802}
+              height={274}
+              className="h-12 w-auto object-contain md:h-14"
               priority
             />
           </motion.div>
