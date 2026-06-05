@@ -19,7 +19,7 @@ export function ProcessSection() {
       id="metodo"
       className="relative overflow-hidden border-t border-white/10 bg-[#f6f8fb] py-24 text-slate-950 md:py-32"
     >
-      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,23,42,0.06)_0,transparent_34%),radial-gradient(circle_at_82%_8%,rgba(0,229,229,0.22),transparent_36rem)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,15,15,0.06)_0,transparent_34%),radial-gradient(circle_at_82%_8%,rgba(233,189,87,0.20),transparent_36rem)]" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.35] [background-image:linear-gradient(rgba(15,23,42,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.06)_1px,transparent_1px)] [background-size:64px_64px] [mask-image:radial-gradient(circle_at_50%_30%,black,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
@@ -36,7 +36,7 @@ export function ProcessSection() {
             </p>
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight md:text-5xl">
               Dalla raccolta dei documenti all&apos;avvio dei corsi,{" "}
-              <span className="font-display italic font-normal text-brand-700">
+              <span className="font-display font-normal text-brand-700">
                 gestiamo ogni fase per te.
               </span>
             </h2>
@@ -83,15 +83,15 @@ function TimelineRow({ step, index, total, scrollYProgress }: TimelineRowProps) 
 
   const active = useTransform(scrollYProgress, (latest) => latest >= threshold);
   const dotScale = useTransform(active, (a) => (a ? 1.05 : 1));
-  const dotBg = useTransform(active, (a) => (a ? "#030817" : "#ffffff"));
-  const dotColor = useTransform(active, (a) => (a ? "#67e8f9" : "#030817"));
+  const dotBg = useTransform(active, (a) => (a ? "#030303" : "#ffffff"));
+  const dotColor = useTransform(active, (a) => (a ? "#f7d991" : "#030303"));
   const dotShadow = useTransform(active, (a) =>
     a
-      ? "0 24px 50px -10px rgba(0,229,229,0.55), 0 0 0 6px rgba(0,229,229,0.08)"
+      ? "0 24px 50px -10px rgba(233,189,87,0.50), 0 0 0 6px rgba(233,189,87,0.10)"
       : "0 12px 30px rgba(15,23,42,0.10)",
   );
   const dotBorder = useTransform(active, (a) =>
-    a ? "1px solid rgba(0,229,229,0.5)" : "1px solid rgba(15,23,42,0.08)",
+    a ? "1px solid rgba(233,189,87,0.55)" : "1px solid rgba(15,23,42,0.08)",
   );
 
   return (

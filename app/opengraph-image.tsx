@@ -17,7 +17,7 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           padding: "80px",
           background:
-            "radial-gradient(800px 600px at 90% 10%, rgba(0,229,229,0.35), transparent 60%), radial-gradient(700px 500px at 0% 100%, rgba(0,180,180,0.20), transparent 60%), #030817",
+            "radial-gradient(800px 600px at 90% 10%, rgba(233,189,87,0.30), transparent 60%), radial-gradient(700px 500px at 0% 100%, rgba(199,122,22,0.18), transparent 60%), #030303",
           color: "#ffffff",
           fontFamily: "Inter, sans-serif",
           position: "relative",
@@ -40,8 +40,8 @@ export default async function OpengraphImage() {
               width: 44,
               height: 44,
               borderRadius: 12,
-              background: "#00e5e5",
-              boxShadow: "0 0 60px rgba(0,229,229,0.6)",
+              background: "linear-gradient(135deg, #ffffff, #f7d991 45%, #c77a16)",
+              boxShadow: "0 0 60px rgba(233,189,87,0.55)",
             }}
           />
           <div
@@ -65,13 +65,13 @@ export default async function OpengraphImage() {
               gap: 12,
               padding: "8px 16px",
               alignSelf: "flex-start",
-              border: "1px solid rgba(0,229,229,0.4)",
+              border: "1px solid rgba(233,189,87,0.42)",
               borderRadius: 999,
-              background: "rgba(0,229,229,0.1)",
+              background: "rgba(233,189,87,0.12)",
               fontSize: 18,
               letterSpacing: 4,
               textTransform: "uppercase",
-              color: "#a5f3fc",
+              color: "#f7d991",
               fontWeight: 600,
             }}
           >
@@ -80,8 +80,8 @@ export default async function OpengraphImage() {
                 width: 10,
                 height: 10,
                 borderRadius: "50%",
-                background: "#67e8f9",
-                boxShadow: "0 0 12px rgba(103,232,249,0.9)",
+                background: "#e9bd57",
+                boxShadow: "0 0 12px rgba(233,189,87,0.9)",
               }}
             />
             Formazione finanziata · B2B
@@ -98,7 +98,7 @@ export default async function OpengraphImage() {
             }}
           >
             Formazione finanziata{" "}
-            <span style={{ color: "#67e8f9", fontStyle: "italic", fontWeight: 500 }}>
+            <span style={{ color: "#e9bd57", fontWeight: 500 }}>
               per la tua azienda.
             </span>
           </div>

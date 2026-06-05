@@ -10,7 +10,7 @@ export function WhySwarp() {
       id="perche-swarp"
       className="relative border-t border-white/[0.06] bg-ink-950 py-24 md:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_85%_15%,rgba(0,229,229,0.06),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_85%_15%,rgba(233,189,87,0.08),transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-14 max-w-3xl">
@@ -19,13 +19,13 @@ export function WhySwarp() {
           </p>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl">
             La formazione è ciò che fa{" "}
-            <span className="font-display italic font-normal text-brand-300">
+            <span className="font-display font-normal text-brand-300">
               crescere davvero
             </span>{" "}
             la tua azienda.
           </h2>
           <p className="mt-5 text-pretty text-lg leading-8 text-ink-100">
-            Scopri con noi come finanziarla al meglio con Swarp.
+            Scopri come finanziarla al meglio con Swarp.
           </p>
         </div>
 

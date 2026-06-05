@@ -29,7 +29,7 @@ export function CareerSection() {
       id="lavora-con-noi"
       className="relative border-t border-white/10 bg-ink-950 py-24 md:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_15%_30%,rgba(0,229,229,0.08),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_15%_30%,rgba(233,189,87,0.10),transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
@@ -45,7 +45,7 @@ export function CareerSection() {
             <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
               Cerchiamo persone che possano portare{" "}
               <span className="text-brand-300">valore</span>{" "}
-              <span className="font-display italic font-normal text-brand-300">
+              <span className="font-display font-normal text-brand-300">
                 alla nostra realtà.
               </span>
             </h2>

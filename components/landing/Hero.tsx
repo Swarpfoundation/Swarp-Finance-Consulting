@@ -36,7 +36,7 @@ export function Hero() {
         />
       </motion.div>
 
-      <div className="absolute inset-0 bg-[linear-gradient(92deg,var(--color-ink-950)_0%,rgba(3,8,23,0.92)_34%,rgba(3,8,23,0.55)_66%,rgba(3,8,23,0.82)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(92deg,var(--color-ink-950)_0%,rgba(3,3,3,0.94)_34%,rgba(20,18,16,0.62)_66%,rgba(3,3,3,0.88)_100%)]" />
       <div className="mesh-orbs absolute inset-0" />
       <div className="noise" />
       <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-ink-950 to-transparent" />
@@ -52,7 +52,7 @@ export function Hero() {
           className="text-balance text-5xl font-semibold leading-[0.96] tracking-tight text-white md:text-7xl lg:text-[5.5rem]"
         >
           Formazione finanziata{" "}
-          <span className="font-display italic font-normal text-brand-300">
+          <span className="font-display font-normal text-brand-300">
             per la tua azienda.
           </span>
         </motion.h1>
@@ -64,6 +64,8 @@ export function Hero() {
           Offriamo percorsi di formazione finanziata su misura per sviluppare le competenze del
           tuo team e far crescere la tua azienda.
         </motion.p>
+
+        <motion.div variants={fadeUp} className="tricolor-rule mt-6 w-64" />
 
         <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
           <CtaButton href="#contatti">

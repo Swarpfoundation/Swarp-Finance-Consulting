@@ -1,39 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand — extracted from the Swarp logo */
-  --color-brand-50: #ecfeff;
-  --color-brand-100: #cffafe;
-  --color-brand-200: #a5f3fc;
-  --color-brand-300: #67e8f9;
-  --color-brand-400: #22d3ee;
-  --color-brand-500: #00e5e5;
-  --color-brand-600: #00c4c4;
-  --color-brand-700: #0e9a9a;
-  --color-brand-800: #115e5e;
-  --color-brand-900: #0d3f3f;
+  /* Brand extracted from the new Swarp Consulting mark */
+  --color-brand-50: #fff8ec;
+  --color-brand-100: #ffefcd;
+  --color-brand-200: #f7d991;
+  --color-brand-300: #e9bd57;
+  --color-brand-400: #d99a2b;
+  --color-brand-500: #c77a16;
+  --color-brand-600: #a65a11;
+  --color-brand-700: #7e3f10;
+  --color-brand-800: #4f2911;
+  --color-brand-900: #2e190c;
 
-  /* Ink — deep night-blue ramp (cool, slightly desaturated) */
-  --color-ink-50: #e7eef8;
-  --color-ink-100: #c7d3e6;
-  --color-ink-200: #8ea0bf;
-  --color-ink-300: #5a6f93;
-  --color-ink-400: #354a6e;
-  --color-ink-500: #1f3253;
-  --color-ink-600: #14223c;
-  --color-ink-700: #0c1830;
-  --color-ink-800: #081226;
-  --color-ink-900: #050d1f;
-  --color-ink-950: #030817;
+  /* Ink: cinematic black and warm charcoal */
+  --color-ink-50: #f3f0ea;
+  --color-ink-100: #ddd7cd;
+  --color-ink-200: #b9afa1;
+  --color-ink-300: #8f8374;
+  --color-ink-400: #665b50;
+  --color-ink-500: #463d35;
+  --color-ink-600: #302922;
+  --color-ink-700: #201b17;
+  --color-ink-800: #141210;
+  --color-ink-900: #0b0a09;
+  --color-ink-950: #030303;
 
   /* Accent / status */
-  --color-gold-200: #fde68a;
-  --color-gold-300: #fcd34d;
-  --color-gold-500: #f59e0b;
+  --color-gold-200: #f7d991;
+  --color-gold-300: #e9bd57;
+  --color-gold-500: #c77a16;
+  --color-italy-green: #009246;
+  --color-italy-red: #ce2b37;
 
   /* Fonts (CSS variables provided by next/font) */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-display), "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: var(--font-display), "Cinzel", ui-serif, Georgia, serif;
 
   /* Radii */
   --radius-2xs: 0.375rem;
@@ -46,8 +48,8 @@
   --radius-3xl: 2rem;
 
   /* Shadows */
-  --shadow-glow-brand: 0 20px 80px -20px rgba(0, 229, 229, 0.35);
-  --shadow-glow-soft: 0 18px 70px rgba(0, 210, 211, 0.08);
+  --shadow-glow-brand: 0 20px 80px -20px rgba(233, 189, 87, 0.38);
+  --shadow-glow-soft: 0 18px 70px rgba(199, 122, 22, 0.12);
   --shadow-elevated: 0 24px 80px rgba(2, 6, 23, 0.45);
 
   /* Easings */
@@ -81,8 +83,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
 ::selection {
-  background: rgba(0, 229, 229, 0.28);
+  background: rgba(233, 189, 87, 0.28);
   color: #ffffff;
 }
 
@@ -113,7 +122,7 @@ a {
 
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .section-shell {
@@ -131,7 +140,7 @@ a {
 
 .accent-ring {
   box-shadow:
-    0 0 0 1px rgba(0, 229, 229, 0.22),
+    0 0 0 1px rgba(233, 189, 87, 0.24),
     var(--shadow-glow-soft);
 }
 
@@ -155,8 +164,8 @@ a {
 
 .mesh-orbs::before {
   background:
-    radial-gradient(40rem 40rem at 18% 12%, rgba(0, 229, 229, 0.18), transparent 60%),
-    radial-gradient(36rem 36rem at 88% 8%, rgba(34, 211, 238, 0.10), transparent 60%);
+    radial-gradient(40rem 40rem at 18% 12%, rgba(233, 189, 87, 0.18), transparent 60%),
+    radial-gradient(36rem 36rem at 88% 8%, rgba(199, 122, 22, 0.12), transparent 60%);
 }
 
 .mesh-orbs::after {
@@ -184,7 +193,19 @@ a {
 .input-modern:focus {
   border-color: var(--color-brand-600);
   background: white;
-  box-shadow: 0 0 0 4px rgba(0, 229, 229, 0.16);
+  box-shadow: 0 0 0 4px rgba(233, 189, 87, 0.18);
+}
+
+.tricolor-rule {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-italy-green) 26%,
+    #ffffff 50%,
+    var(--color-italy-red) 74%,
+    transparent
+  );
 }
 
 .text-balance {

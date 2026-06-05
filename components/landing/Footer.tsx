@@ -18,24 +18,17 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-4">
               <Image
-                src="/swarp_consulting_transparent.png"
+                src="/swarp-consulting-transparent-brand.png"
                 alt="Swarp Consulting"
-                width={160}
-                height={160}
-                className="h-16 w-auto object-contain"
+                width={260}
+                height={108}
+                className="h-20 w-64 object-cover object-center md:h-24 md:w-80"
               />
-              <div>
-                <p className="text-[10px] font-semibold uppercase leading-tight tracking-[0.32em] text-white">
-                  Swarp
-                </p>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-ink-200">
-                  Consulting
-                </p>
-              </div>
             </div>
+            <div className="tricolor-rule mt-5 w-56" />
             <p className="mt-7 max-w-xl text-pretty text-lg leading-8 text-ink-100">
               Formazione finanziata per le aziende italiane:{" "}
-              <span className="font-display italic font-normal text-brand-200">
+              <span className="font-display font-normal text-brand-200">
                 ci occupiamo della gestione dei fondi
               </span>{" "}
               e di tutta la burocrazia.
@@ -75,7 +68,7 @@ export function Footer() {
               </p>
               <p className="mt-3 font-display text-3xl font-normal leading-tight tracking-tight text-white md:text-4xl">
                 Swarp Foundation{" "}
-                <span className="italic text-brand-200">S.r.l.</span>
+                <span className="text-brand-200">S.r.l.</span>
               </p>
               <p className="mt-2 text-sm text-ink-200">
                 Swarp Consulting è un servizio di Swarp Foundation S.r.l.

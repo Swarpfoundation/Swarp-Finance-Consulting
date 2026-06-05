@@ -15,7 +15,7 @@ export function FAQ() {
       id="faq"
       className="relative border-t border-white/10 bg-ink-950 py-24 md:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_85%_30%,rgba(0,229,229,0.05),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_85%_30%,rgba(233,189,87,0.07),transparent)]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.25fr_0.75fr]">
         <div>
@@ -24,7 +24,7 @@ export function FAQ() {
           </p>
           <h2 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white md:text-5xl">
             Domande{" "}
-            <span className="font-display italic font-normal text-brand-300">
+            <span className="font-display font-normal text-brand-300">
               frequenti.
             </span>
           </h2>
@@ -48,7 +48,7 @@ export function FAQ() {
                     </span>
                     <span
                       className={cn(
-                        "flex-1 font-display text-xl italic leading-snug text-white transition md:text-2xl",
+                        "flex-1 font-display text-xl leading-snug text-white transition md:text-2xl",
                         isOpen && "text-brand-100",
                       )}
                     >
@@ -89,13 +89,13 @@ export function FAQ() {
         </div>
 
         <aside className="lg:sticky lg:top-32 lg:h-fit">
-          <div className="relative overflow-hidden rounded-[2rem] border border-brand-400/25 bg-[linear-gradient(155deg,rgba(0,229,229,0.14),rgba(255,255,255,0.02))] p-7 md:p-8">
+          <div className="relative overflow-hidden rounded-[2rem] border border-brand-400/25 bg-[linear-gradient(155deg,rgba(233,189,87,0.16),rgba(255,255,255,0.02))] p-7 md:p-8">
             <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-brand-400/20 blur-3xl" />
             <div className="relative">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-200">
                 Hai altre domande?
               </p>
-              <h3 className="mt-5 font-display text-3xl italic leading-snug text-white">
+              <h3 className="mt-5 font-display text-3xl leading-snug text-white">
                 Contattaci.
               </h3>
               <p className="mt-4 text-sm leading-7 text-ink-100">

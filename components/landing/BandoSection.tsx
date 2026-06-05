@@ -28,7 +28,7 @@ export function BandoSection() {
       id="bando"
       className="relative overflow-hidden border-t border-white/10 bg-[#f6f8fb] py-24 text-slate-950 md:py-32"
     >
-      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,23,42,0.06)_0,transparent_34%),radial-gradient(circle_at_85%_8%,rgba(0,229,229,0.20),transparent_36rem)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(15,15,15,0.06)_0,transparent_34%),radial-gradient(circle_at_85%_8%,rgba(233,189,87,0.18),transparent_36rem)]" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.35] [background-image:linear-gradient(rgba(15,23,42,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.06)_1px,transparent_1px)] [background-size:64px_64px] [mask-image:radial-gradient(circle_at_50%_20%,black,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
@@ -44,7 +44,7 @@ export function BandoSection() {
           </p>
           <h2 className="text-balance text-3xl font-semibold leading-[1.08] tracking-tight md:text-5xl">
             Bando Formazione Continua FSE+ 2021–2027{" "}
-            <span className="font-display italic font-normal text-brand-700">
+            <span className="font-display font-normal text-brand-700">
               Regione Lombardia
             </span>
           </h2>

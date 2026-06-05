@@ -22,7 +22,7 @@ export function TrainingCategories() {
       id="corsi"
       className="relative border-t border-white/10 bg-ink-950 py-24 md:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50rem_30rem_at_20%_10%,rgba(0,229,229,0.06),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50rem_30rem_at_20%_10%,rgba(233,189,87,0.08),transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeader
@@ -91,7 +91,7 @@ export function TrainingCategories() {
                   className={cn(
                     "group relative overflow-hidden rounded-[1.5rem] border border-white/10 p-6 transition hover:-translate-y-1 hover:border-brand-400/45",
                     isFeatured
-                      ? "bg-[linear-gradient(145deg,rgba(0,229,229,0.10),rgba(255,255,255,0.02))] lg:col-span-2 lg:row-span-1"
+                      ? "bg-[linear-gradient(145deg,rgba(233,189,87,0.12),rgba(255,255,255,0.02))] lg:col-span-2 lg:row-span-1"
                       : "bg-[linear-gradient(145deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))]",
                   )}
                 >

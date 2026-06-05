@@ -84,7 +84,7 @@ export function LeadAssessment() {
   if (status === "success") {
     return (
       <section id="contatti" className="relative border-t border-white/10 bg-ink-950 py-24 md:py-32">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50rem_30rem_at_50%_30%,rgba(34,211,238,0.16),transparent)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50rem_30rem_at_50%_30%,rgba(233,189,87,0.16),transparent)]" />
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export function LeadAssessment() {
             <CheckCircle2 className="size-10" aria-hidden="true" />
           </div>
           <h2 className="mt-8 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Richiesta <span className="font-display italic font-normal text-brand-300">ricevuta.</span>
+            Richiesta <span className="font-display font-normal text-brand-300">ricevuta.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-8 text-ink-100">
             Ti ricontatteremo entro pochi giorni per risponderti e per proporti i corsi più adatti
@@ -122,7 +122,7 @@ export function LeadAssessment() {
       id="contatti"
       className="relative overflow-hidden border-t border-white/10 bg-ink-950 py-24 md:py-32"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.18),transparent_26rem),radial-gradient(circle_at_82%_12%,rgba(16,185,129,0.14),transparent_28rem)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(233,189,87,0.18),transparent_26rem),radial-gradient(circle_at_82%_12%,rgba(199,122,22,0.12),transparent_28rem)]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.75fr_1.25fr]">
         <aside className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 backdrop-blur-xl lg:sticky lg:top-28 lg:h-fit">

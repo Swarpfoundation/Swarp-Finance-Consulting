@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
               Informativa privacy
             </p>
             <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
-              Privacy <span className="font-display italic font-normal text-brand-300">Policy.</span>
+              Privacy <span className="font-display font-normal text-brand-300">Policy.</span>
             </h1>
             <p className="mt-5 text-pretty text-base leading-7 text-ink-100">
               Questa informativa spiega come Swarp Foundation S.r.l. — il soggetto che gestisce il

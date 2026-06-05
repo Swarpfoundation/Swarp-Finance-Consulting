@@ -31,25 +31,21 @@ export function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
-        <Link href="#" className="flex items-center gap-3" aria-label="Swarp Consulting home">
+        <Link href="#" className="flex items-center" aria-label="Swarp Consulting home">
           <motion.div
             animate={{ scale: scrolled ? 0.92 : 1 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
             <Image
-              src="/swarp_consulting_transparent.png"
+              src="/swarp-consulting-transparent-brand.png"
               alt="Swarp Consulting"
-              width={96}
-              height={96}
-              className="size-12 object-contain md:size-14"
+              width={220}
+              height={92}
+              className="h-12 w-40 object-cover object-center md:h-14 md:w-48"
               priority
             />
           </motion.div>
-          <span className="hidden max-w-44 text-[11px] font-semibold uppercase leading-tight tracking-[0.22em] text-white sm:block">
-            Swarp
-            <span className="block text-ink-200">Consulting</span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm text-ink-100 lg:flex" aria-label="Navigazione principale">

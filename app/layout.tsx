@@ -1,12 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
-import { Instrument_Serif } from "next/font/google";
+import { Cinzel } from "next/font/google";
 import "./globals.css";
 
-const instrumentSerif = Instrument_Serif({
+const cinzel = Cinzel({
   subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
@@ -71,13 +70,13 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/swarp_consulting_transparent.png",
-    apple: "/swarp_consulting_transparent.png",
+    icon: "/swarp-consulting-transparent-brand.png",
+    apple: "/swarp-consulting-transparent-brand.png",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#030817",
+  themeColor: "#030303",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -89,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className={`${GeistSans.variable} ${instrumentSerif.variable}`}>
+    <html lang="it" className={`${GeistSans.variable} ${cinzel.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

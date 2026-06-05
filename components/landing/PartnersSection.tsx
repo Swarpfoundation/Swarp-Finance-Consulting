@@ -38,7 +38,7 @@ export function PartnersSection() {
       id="partner"
       className="relative border-t border-white/10 bg-ink-950 py-24 md:py-32"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_80%_20%,rgba(0,229,229,0.06),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_40rem_at_80%_20%,rgba(233,189,87,0.08),transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
@@ -47,7 +47,7 @@ export function PartnersSection() {
           </p>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl">
             Le realtà con cui{" "}
-            <span className="font-display italic font-normal text-brand-300">collaboriamo.</span>
+            <span className="font-display font-normal text-brand-300">collaboriamo.</span>
           </h2>
         </div>
 
