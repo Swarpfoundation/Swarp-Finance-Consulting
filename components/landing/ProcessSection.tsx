@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
-import type { LucideIcon } from "lucide-react";
 import { processSteps } from "./data";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
@@ -78,7 +77,6 @@ type TimelineRowProps = {
 };
 
 function TimelineRow({ step, index, total, scrollYProgress }: TimelineRowProps) {
-  const Icon = step.icon as LucideIcon;
   const threshold = index / total;
 
   const active = useTransform(scrollYProgress, (latest) => latest >= threshold);
@@ -110,9 +108,9 @@ function TimelineRow({ step, index, total, scrollYProgress }: TimelineRowProps) 
           boxShadow: dotShadow,
           border: dotBorder,
         }}
-        className="z-10 grid size-12 place-items-center rounded-2xl"
+        className="z-10 grid size-12 place-items-center rounded-2xl font-display text-lg font-semibold"
       >
-        <Icon className="size-5" aria-hidden="true" />
+        {index + 1}
       </motion.div>
 
       <div>

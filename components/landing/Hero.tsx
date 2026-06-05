@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { CtaButton } from "./CtaButton";
 import { proofPoints } from "./data";
@@ -68,9 +67,7 @@ export function Hero() {
         <motion.div variants={fadeUp} className="tricolor-rule mt-6 w-64" />
 
         <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
-          <CtaButton href="#contatti">
-            Contattaci <ArrowRight size={18} aria-hidden="true" />
-          </CtaButton>
+          <CtaButton href="#contatti">Contattaci</CtaButton>
           <CtaButton href="#metodo" variant="secondary">
             Scopri come funziona
           </CtaButton>
@@ -86,11 +83,8 @@ export function Hero() {
             <motion.li
               key={point}
               variants={fadeUp}
-              className="flex items-center gap-3 text-sm text-ink-100"
+              className="border-l border-brand-400/45 pl-4 text-sm leading-6 text-ink-100"
             >
-              <span className="grid size-7 place-items-center rounded-full border border-brand-400/30 bg-brand-400/10">
-                <CheckCircle2 className="size-3.5 text-brand-300" aria-hidden="true" />
-              </span>
               {point}
             </motion.li>
           ))}
@@ -105,7 +99,6 @@ export function Hero() {
         className="pointer-events-none absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-ink-200 md:flex"
       >
         <span>Scorri</span>
-        <ChevronDown className="size-4 animate-bounce" aria-hidden="true" />
       </motion.div>
     </section>
   );

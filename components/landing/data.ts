@@ -1,22 +1,3 @@
-import {
-  BookOpenCheck,
-  BrainCircuit,
-  BriefcaseBusiness,
-  Flame,
-  Globe,
-  HeartPulse,
-  Languages,
-  MonitorCog,
-  Network,
-  PencilRuler,
-  Route,
-  Shield,
-  Sparkles,
-  Store,
-  Utensils,
-  Wrench,
-} from "lucide-react";
-
 export const navItems = [
   { label: "Metodo", href: "#metodo" },
   { label: "Corsi", href: "#corsi" },
@@ -34,31 +15,26 @@ export const proofPoints = [
 
 export const processSteps = [
   {
-    icon: Sparkles,
     label: "Spiegazione",
     title: "Spiegazione riguardo il fondo",
     text: "Ti spieghiamo che cosa sono i fondi interprofessionali, da dove arrivano questi soldi e quale tipo di formazione può essere finanziata.",
   },
   {
-    icon: Network,
     label: "Raccolta",
     title: "Raccolta documenti e dati",
     text: "Raccogliamo i dati del titolare dell'azienda, del consulente del lavoro e richiediamo tutti i documenti necessari.",
   },
   {
-    icon: Shield,
     label: "Iscrizione",
     title: "Iscrizione al fondo",
     text: "Dopo aver ottenuto tutta la documentazione necessaria, procediamo con l'iscrizione al fondo tramite il portale dell'INPS.",
   },
   {
-    icon: Route,
     label: "Definizione",
     title: "Definizione del piano formativo",
     text: "Decidiamo insieme a te i corsi da svolgere e gli obiettivi da raggiungere.",
   },
   {
-    icon: BookOpenCheck,
     label: "Avvio",
     title: "Avvio dei corsi",
     text: "Una volta iscritti al fondo, sarà possibile iniziare la formazione.",
@@ -68,92 +44,78 @@ export const processSteps = [
 export type TrainingTag = "obbligatorio" | "professionalizzante" | "settoriale";
 
 export const trainingCategories: {
-  icon: typeof BrainCircuit;
   title: string;
   text: string;
   tag: TrainingTag;
   featured?: boolean;
 }[] = [
   {
-    icon: Shield,
     title: "Sicurezza sul lavoro",
     text: "D.Lgs 81/08 e tutti gli obblighi di legge in materia di salute e sicurezza in azienda.",
     tag: "obbligatorio",
     featured: true,
   },
   {
-    icon: Flame,
     title: "Antincendio",
     text: "Formazione antincendio per addetti, aggiornamenti periodici e prevenzione in azienda.",
     tag: "obbligatorio",
   },
   {
-    icon: HeartPulse,
     title: "Primo soccorso",
     text: "Corsi obbligatori per addetti al primo soccorso, con aggiornamenti periodici.",
     tag: "obbligatorio",
   },
   {
-    icon: BriefcaseBusiness,
     title: "Marketing e branding",
     text: "Posizionamento, comunicazione e branding per costruire la presenza dell'azienda.",
     tag: "professionalizzante",
     featured: true,
   },
   {
-    icon: Sparkles,
     title: "Vendite",
     text: "Tecniche di vendita, negoziazione e gestione del cliente per il team commerciale.",
     tag: "professionalizzante",
   },
   {
-    icon: Wrench,
     title: "Gestione aziendale",
     text: "Organizzazione, processi e gestione del personale e dell'attività quotidiana.",
     tag: "professionalizzante",
   },
   {
-    icon: MonitorCog,
     title: "Excel",
     text: "Fogli di calcolo, formule e analisi dei dati per chi lavora ogni giorno con Excel.",
     tag: "professionalizzante",
   },
   {
-    icon: Globe,
     title: "Siti web",
     text: "Creazione e gestione di siti web aziendali, e-commerce e presenza digitale.",
     tag: "professionalizzante",
   },
   {
-    icon: BrainCircuit,
     title: "Intelligenza artificiale",
     text: "Strumenti generativi, automazioni e casi d'uso pratici per ridurre tempi e costi.",
     tag: "professionalizzante",
     featured: true,
   },
   {
-    icon: Languages,
     title: "Corsi di lingua",
     text: "Inglese per il business e italiano operativo per il personale straniero.",
     tag: "professionalizzante",
     featured: true,
   },
   {
-    icon: Store,
     title: "Palestre",
     text: "Formazione istruttori e personal trainer, gestione clienti e organizzazione del centro.",
     tag: "settoriale",
     featured: true,
   },
   {
-    icon: Utensils,
     title: "Ristorazione",
     text: "Bartender e mixology, gestione staff e servizio clienti per ristoranti, hotel e bar.",
     tag: "settoriale",
     featured: true,
   },
   {
-    icon: PencilRuler,
     title: "Formazione tecnica di settore",
     text: "Formazione tecnica specifica per ogni settore, costruita sui fabbisogni reali dell'azienda.",
     tag: "settoriale",
@@ -202,4 +164,3 @@ export const contactRoles = [
 ] as const;
 
 export type ContactRole = (typeof contactRoles)[number];
-

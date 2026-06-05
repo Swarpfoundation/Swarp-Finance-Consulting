@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Building2, FileText, MapPin } from "lucide-react";
 import { navItems } from "./data";
 
 export function Footer() {
@@ -55,7 +54,6 @@ export function Footer() {
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-300 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-brand-200"
             >
               Contattaci
-              <ArrowUpRight className="size-4" aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -79,14 +77,13 @@ export function Footer() {
               className="inline-flex items-center gap-2 self-start rounded-full border border-white/10 px-4 py-2 text-sm text-ink-100 transition hover:border-brand-400/45 hover:text-white md:self-end"
             >
               info@swarpconsulting.com
-              <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>
           </div>
 
           <dl className="mt-6 grid gap-6 md:grid-cols-3">
             <div>
-              <dt className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
-                <MapPin className="size-3.5" aria-hidden="true" /> Sede legale
+              <dt className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
+                Sede legale
               </dt>
               <dd className="mt-3 text-sm not-italic leading-6 text-white">
                 Viale Tunisia 22
@@ -97,8 +94,8 @@ export function Footer() {
               </dd>
             </div>
             <div>
-              <dt className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
-                <FileText className="size-3.5" aria-hidden="true" /> Registrazione
+              <dt className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
+                Registrazione
               </dt>
               <dd className="mt-3 space-y-1 text-sm leading-6 text-white">
                 <p>
@@ -113,8 +110,8 @@ export function Footer() {
               </dd>
             </div>
             <div>
-              <dt className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
-                <Building2 className="size-3.5" aria-hidden="true" /> Contatti
+              <dt className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink-200">
+                Contatti
               </dt>
               <dd className="mt-3 space-y-1 text-sm leading-6 text-white">
                 <p>

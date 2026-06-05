@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, Plus } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { faqItems } from "./data";
@@ -56,13 +55,13 @@ export function FAQ() {
                     </span>
                     <span
                       className={cn(
-                        "mt-1 grid size-9 shrink-0 place-items-center rounded-full border transition",
+                        "mt-1 shrink-0 rounded-full border px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] transition",
                         isOpen
-                          ? "rotate-45 border-brand-400/60 bg-brand-400/10 text-brand-200"
+                          ? "border-brand-400/60 bg-brand-400/10 text-brand-200"
                           : "border-white/10 text-ink-100 group-hover:border-brand-400/40 group-hover:text-brand-200",
                       )}
                     >
-                      <Plus className="size-4" aria-hidden="true" />
+                      {isOpen ? "Chiudi" : "Apri"}
                     </span>
                   </button>
 
@@ -107,7 +106,6 @@ export function FAQ() {
                 className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-300 px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-brand-200"
               >
                 Contattaci
-                <ArrowUpRight className="size-4" aria-hidden="true" />
               </Link>
             </div>
           </div>

@@ -3,7 +3,6 @@
 import { FormEvent, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Loader2, RotateCcw, Sparkles } from "lucide-react";
 import { validateLeadPayload, type LeadPayload } from "@/lib/validation";
 import { contactRoles, type ContactRole } from "./data";
 import { cn } from "@/lib/cn";
@@ -91,9 +90,6 @@ export function LeadAssessment() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="relative mx-auto max-w-4xl px-6 text-center"
         >
-          <div className="mx-auto grid size-20 place-items-center rounded-full bg-brand-300 text-ink-950">
-            <CheckCircle2 className="size-10" aria-hidden="true" />
-          </div>
           <h2 className="mt-8 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
             Richiesta <span className="font-display font-normal text-brand-300">ricevuta.</span>
           </h2>
@@ -110,7 +106,7 @@ export function LeadAssessment() {
               setErrors({});
             }}
           >
-            Nuova richiesta <RotateCcw size={18} aria-hidden="true" />
+            Nuova richiesta
           </button>
         </motion.div>
       </section>
@@ -136,8 +132,7 @@ export function LeadAssessment() {
             Per ricevere maggiori informazioni compila il questionario qui sotto.
           </p>
 
-          <div className="mt-8 flex items-center gap-3 rounded-2xl border border-gold-200/20 bg-gold-200/5 p-4 text-xs leading-6 text-gold-200">
-            <Sparkles className="size-4 shrink-0" aria-hidden="true" />
+          <div className="mt-8 rounded-2xl border border-gold-200/20 bg-gold-200/5 p-4 text-xs leading-6 text-gold-200">
             Ti rispondiamo entro pochi giorni con i corsi più adatti alla tua azienda.
           </div>
         </aside>
@@ -261,14 +256,9 @@ export function LeadAssessment() {
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink-950 px-6 font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {status === "loading" ? (
-                <>
-                  <Loader2 className="size-5 animate-spin" aria-hidden="true" />
-                  Invio in corso
-                </>
+                "Invio in corso"
               ) : (
-                <>
-                  Invia <ArrowRight size={18} aria-hidden="true" />
-                </>
+                "Invia"
               )}
             </button>
           </div>

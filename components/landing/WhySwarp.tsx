@@ -1,6 +1,5 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
@@ -39,7 +38,6 @@ export function WhySwarp() {
           <div className="absolute -right-12 -top-12 size-72 rounded-full bg-brand-400/15 blur-3xl" />
           <div className="relative grid gap-10 md:grid-cols-[auto_1fr] md:items-center">
             <span className="inline-flex items-center gap-2 self-start rounded-full border border-brand-400/30 bg-brand-400/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.24em] text-brand-200">
-              <Sparkles className="size-3" aria-hidden="true" />
               Come funziona
             </span>
             <p className="text-balance text-xl leading-relaxed text-ink-100 md:text-2xl">

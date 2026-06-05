@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
@@ -84,10 +83,6 @@ export function PartnersSection() {
                     {partner.description}
                   </p>
                 </div>
-                <ArrowUpRight
-                  className="mt-1 size-5 shrink-0 text-ink-300 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-300"
-                  aria-hidden="true"
-                />
               </div>
             </motion.a>
           ))}

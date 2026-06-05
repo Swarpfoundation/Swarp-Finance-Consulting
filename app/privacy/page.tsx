@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 
@@ -22,7 +21,7 @@ export default function PrivacyPolicyPage() {
             href="/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition hover:text-brand-100"
           >
-            <ArrowLeft className="size-4" aria-hidden="true" /> Torna alla home
+            Torna alla home
           </Link>
 
           <header className="mt-8 border-b border-white/10 pb-8">

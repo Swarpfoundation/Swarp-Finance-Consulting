@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import { trainingCategories, trainingFilters, type TrainingTag } from "./data";
 import { SectionHeader } from "./SectionHeader";
 import { cn } from "@/lib/cn";
@@ -74,7 +73,6 @@ export function TrainingCategories() {
         >
           <AnimatePresence mode="popLayout">
             {filtered.map((category, index) => {
-              const Icon = category.icon;
               const isFeatured = Boolean(category.featured);
               return (
                 <motion.article
@@ -103,13 +101,13 @@ export function TrainingCategories() {
                     <div className="flex items-start justify-between gap-4">
                       <div
                         className={cn(
-                          "flex size-12 items-center justify-center rounded-2xl ring-1 transition group-hover:bg-brand-300 group-hover:text-ink-950",
+                          "flex min-h-10 items-center justify-center rounded-full px-3 text-[10px] font-semibold uppercase tracking-[0.18em] ring-1 transition group-hover:bg-brand-300 group-hover:text-ink-950",
                           isFeatured
                             ? "bg-brand-400/15 text-brand-200 ring-brand-400/30"
                             : "bg-brand-400/10 text-brand-200 ring-brand-400/25",
                         )}
                       >
-                        <Icon className="size-6" aria-hidden="true" />
+                        {trainingFilters.find((f) => f.id === category.tag)?.label}
                       </div>
                       {isFeatured ? (
                         <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-400/30 bg-brand-400/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-200">
@@ -132,9 +130,8 @@ export function TrainingCategories() {
 
                     <div className="mt-6 flex items-center justify-between border-t border-white/5 pt-4">
                       <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-ink-300">
-                        {trainingFilters.find((f) => f.id === category.tag)?.label}
+                        Swarp Consulting
                       </span>
-                      <ArrowUpRight className="size-4 text-ink-300 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-300" />
                     </div>
                   </div>
                 </motion.article>

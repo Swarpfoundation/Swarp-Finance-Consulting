@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { navItems } from "./data";
@@ -63,18 +62,18 @@ export function Header() {
 
         <div className="hidden lg:block">
           <CtaButton href="#contatti" className="min-h-10 px-4">
-            Contattaci <ArrowUpRight size={16} aria-hidden="true" />
+            Contattaci
           </CtaButton>
         </div>
 
         <button
           type="button"
-          className="grid size-10 place-items-center rounded-full border border-white/10 text-white lg:hidden"
+          className="min-h-10 rounded-full border border-white/10 px-4 text-xs font-semibold uppercase tracking-[0.18em] text-white lg:hidden"
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-label={open ? "Chiudi menu" : "Apri menu"}
         >
-          {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+          {open ? "Chiudi" : "Menu"}
         </button>
       </motion.div>
 

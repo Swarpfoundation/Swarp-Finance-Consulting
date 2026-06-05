@@ -1,23 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, Briefcase, Compass, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
 const pillars = [
   {
-    icon: Compass,
     title: "Cresci con noi",
     text: "Lavora in un'azienda dove crescita e risultati vengono realmente valorizzati.",
   },
   {
-    icon: Users,
     title: "Un team che ti supporta",
     text: "Entra a far parte di un team dinamico e collaborativo, pronto a supportarti in ogni fase del tuo percorso.",
   },
   {
-    icon: Briefcase,
     title: "Formazione interna",
     text: "Non serve esperienza previa: riceverai una formazione completa che ti permetterà di acquisire tutte le competenze necessarie.",
   },
@@ -67,7 +63,6 @@ export function CareerSection() {
               className="mt-9 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-semibold text-slate-950 shadow-[0_20px_80px_rgba(255,255,255,0.18)] transition hover:bg-brand-300"
             >
               Invia la tua candidatura
-              <ArrowUpRight className="size-4" aria-hidden="true" />
             </Link>
 
             <p className="mt-5 max-w-xl text-sm leading-7 text-ink-200">
@@ -89,24 +84,21 @@ export function CareerSection() {
             variants={stagger(0.05, 0.1)}
             className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1"
           >
-            {pillars.map((pillar) => {
-              const Icon = pillar.icon;
-              return (
+            {pillars.map((pillar, index) => (
                 <motion.article
                   key={pillar.title}
                   variants={fadeUp}
                   className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 transition hover:border-brand-400/35 lg:flex lg:items-start lg:gap-5 lg:p-7"
                 >
-                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand-400/10 text-brand-200 ring-1 ring-brand-400/25 transition group-hover:bg-brand-300 group-hover:text-ink-950">
-                    <Icon className="size-6" aria-hidden="true" />
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand-400/10 font-display text-lg font-semibold text-brand-200 ring-1 ring-brand-400/25 transition group-hover:bg-brand-300 group-hover:text-ink-950">
+                    {index + 1}
                   </div>
                   <div className="mt-5 lg:mt-0">
                     <h3 className="text-lg font-semibold text-white">{pillar.title}</h3>
                     <p className="mt-2 text-pretty leading-7 text-ink-200">{pillar.text}</p>
                   </div>
                 </motion.article>
-              );
-            })}
+            ))}
           </motion.div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Laptop } from "lucide-react";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
 const figures = [
@@ -108,11 +107,8 @@ export function BandoSection() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={fadeUp}
-          className="mt-6 flex items-start gap-4 rounded-[1.5rem] border border-brand-600/30 bg-brand-50 p-6 md:items-center"
+          className="mt-6 rounded-[1.5rem] border border-brand-600/30 bg-brand-50 p-6"
         >
-          <div className="grid size-12 shrink-0 place-items-center rounded-2xl bg-brand-700 text-white">
-            <Laptop className="size-6" aria-hidden="true" />
-          </div>
           <p className="text-pretty leading-7 text-slate-700">
             Per tutte le categorie di impresa il rimborso può arrivare{" "}
             <span className="font-semibold text-brand-800">fino al 90%</span> in caso di formazione
