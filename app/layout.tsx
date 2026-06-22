@@ -1,12 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { GeistSans } from "geist/font/sans";
-import { Cinzel } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 
-const cinzel = Cinzel({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
   variable: "--font-display",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -88,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className={`${GeistSans.variable} ${cinzel.variable}`}>
+    <html lang="it" className={`${inter.variable} ${instrumentSerif.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
