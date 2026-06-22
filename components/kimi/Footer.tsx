@@ -42,6 +42,12 @@ export default function Footer() {
             >
               Formazione finanziata per il tuo business
             </p>
+            <p
+              className="mt-3 max-w-xs font-body text-sm"
+              style={{ color: "var(--light-gray)", lineHeight: 1.6 }}
+            >
+              Swarp Consulting è un servizio di Swarp Foundation S.r.l.
+            </p>
             {/* Italian Tricolor */}
             <div className="flex gap-0 mt-3" style={{ width: "60px", height: "3px" }}>
               <div style={{ flex: 1, background: "var(--green)" }} />

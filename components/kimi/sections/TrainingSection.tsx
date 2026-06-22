@@ -29,7 +29,7 @@ const categories = [
       "Excel e analisi dati",
       "Siti web, e-commerce e presenza digitale",
       "Intelligenza artificiale e automazioni",
-      "Corsi di lingua per il business",
+      "Inglese per il business e italiano operativo per il personale straniero",
     ],
   },
   {

@@ -10,6 +10,8 @@ const navLinks = [
   { label: "Processo", target: "#processo" },
   { label: "Formazione", target: "#formazione" },
   { label: "Bandi", target: "#bandi" },
+  { label: "Partner", target: "#partner" },
+  { label: "Lavora con noi", target: "#lavora-con-noi" },
   { label: "FAQ", target: "#faq" },
   { label: "Contatti", target: "#contatti" },
 ];
@@ -60,12 +62,12 @@ export default function Navigation() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex">
           {navLinks.map((link) => (
             <button
               key={link.target}
               onClick={() => handleNavClick(link.target)}
-              className="cursor-pointer border-none bg-transparent font-body text-sm font-medium uppercase tracking-widest text-white transition-colors duration-300 hover:text-[var(--gold)]"
+              className="cursor-pointer border-none bg-transparent font-body text-xs font-medium uppercase tracking-widest text-white transition-colors duration-300 hover:text-[var(--gold)]"
             >
               {link.label}
             </button>

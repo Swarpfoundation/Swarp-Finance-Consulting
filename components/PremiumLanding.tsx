@@ -9,14 +9,17 @@ import CursorGlow from "@/components/kimi/CursorGlow";
 import Footer from "@/components/kimi/Footer";
 import Navigation from "@/components/kimi/Navigation";
 import ContactSection from "@/components/kimi/sections/ContactSection";
+import CareerSection from "@/components/kimi/sections/CareerSection";
 import FAQSection from "@/components/kimi/sections/FAQSection";
 import HeroSection from "@/components/kimi/sections/HeroSection";
+import PartnersSection from "@/components/kimi/sections/PartnersSection";
 import ProcessSection from "@/components/kimi/sections/ProcessSection";
 import RegionalFundsSection from "@/components/kimi/sections/RegionalFundsSection";
 import ServicesSection from "@/components/kimi/sections/ServicesSection";
 import StatsSection from "@/components/kimi/sections/StatsSection";
 import TrainingSection from "@/components/kimi/sections/TrainingSection";
 import TrustBarSection from "@/components/kimi/sections/TrustBarSection";
+import WhySwarpSection from "@/components/kimi/sections/WhySwarpSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,11 +61,14 @@ export function PremiumLanding() {
         <main>
           <HeroSection />
           <TrustBarSection />
+          <WhySwarpSection />
           <ServicesSection />
           <ProcessSection />
           <TrainingSection />
           <RegionalFundsSection />
           <StatsSection />
+          <PartnersSection />
+          <CareerSection />
           <FAQSection />
           <ContactSection />
         </main>
