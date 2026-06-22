@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -16,28 +17,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {/* Left Column - Brand */}
           <div className="flex flex-col">
-            <span
-              className="text-white leading-none"
-              style={{
-                fontFamily: "'Instrument Serif', serif",
-                fontSize: "48px",
-              }}
-            >
-              SWARP
-            </span>
-            <span
-              className="leading-none mt-1"
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: "12px",
-                color: "var(--gold)",
-                letterSpacing: "0.3em",
-              }}
-            >
-              CONSULTING
-            </span>
+            <Image
+              src="/swarp-consulting-logo-full.png"
+              alt="Swarp Consulting"
+              width={848}
+              height={332}
+              className="h-auto w-full max-w-[290px] object-contain"
+            />
             <p
-              className="mt-4 font-body text-base"
+              className="mt-6 font-body text-base"
               style={{ color: "var(--light-gray)" }}
             >
               Formazione finanziata per il tuo business
@@ -48,12 +36,6 @@ export default function Footer() {
             >
               Swarp Consulting è un servizio di Swarp Foundation S.r.l.
             </p>
-            {/* Italian Tricolor */}
-            <div className="flex gap-0 mt-3" style={{ width: "60px", height: "3px" }}>
-              <div style={{ flex: 1, background: "var(--green)" }} />
-              <div style={{ flex: 1, background: "var(--white)" }} />
-              <div style={{ flex: 1, background: "var(--red)" }} />
-            </div>
           </div>
 
           {/* Center Column - Contact */}

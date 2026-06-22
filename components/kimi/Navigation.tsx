@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useLenis } from "@/components/kimi/hooks/useLenis";
@@ -36,33 +37,18 @@ export default function Navigation() {
           borderBottom: "1px solid rgba(250, 250, 250, 0.1)",
         }}
       >
-        <Link href="/" className="flex flex-col items-start">
-          <span
-            className="leading-none text-white"
-            style={{
-              fontFamily: "'Instrument Serif', serif",
-              fontSize: "24px",
-              fontWeight: 700,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            SWARP
-          </span>
-          <span
-            className="leading-none"
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: "10px",
-              color: "var(--gold)",
-              letterSpacing: "0.3em",
-              fontWeight: 500,
-            }}
-          >
-            CONSULTING
-          </span>
+        <Link href="/" className="flex h-14 w-[148px] items-center" aria-label="Swarp Consulting home">
+          <Image
+            src="/swarp-consulting-logo-full.png"
+            alt="Swarp Consulting"
+            width={848}
+            height={332}
+            priority
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {navLinks.map((link) => (
             <button
               key={link.target}
@@ -76,7 +62,7 @@ export default function Navigation() {
 
         <button
           onClick={() => handleNavClick("#contatti")}
-          className="hidden cursor-pointer rounded px-5 py-2.5 font-body text-[13px] font-semibold uppercase transition-all duration-300 hover:scale-[1.02] lg:block"
+          className="hidden cursor-pointer rounded px-5 py-2.5 font-body text-[13px] font-semibold uppercase transition-all duration-300 hover:scale-[1.02] xl:block"
           style={{
             background: "var(--gold)",
             color: "var(--black)",
@@ -86,7 +72,7 @@ export default function Navigation() {
         </button>
 
         <button
-          className="cursor-pointer border-none bg-transparent text-white lg:hidden"
+          className="cursor-pointer border-none bg-transparent text-white xl:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Chiudi menu" : "Apri menu"}
           aria-expanded={mobileOpen}
