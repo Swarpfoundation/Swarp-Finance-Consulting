@@ -132,6 +132,21 @@ export function LeadAssessment() {
             Per ricevere maggiori informazioni compila il questionario qui sotto.
           </p>
 
+          <div className="mt-7 space-y-3">
+            <a
+              href="tel:+393759836127"
+              className="block rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-white transition hover:border-brand-400/45 hover:text-brand-200"
+            >
+              +39 375 983 6127
+            </a>
+            <a
+              href="tel:+393759941811"
+              className="block rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-white transition hover:border-brand-400/45 hover:text-brand-200"
+            >
+              +39 375 994 1811
+            </a>
+          </div>
+
           <div className="mt-8 rounded-2xl border border-gold-200/20 bg-gold-200/5 p-4 text-xs leading-6 text-gold-200">
             Ti rispondiamo entro pochi giorni con i corsi più adatti alla tua azienda.
           </div>
