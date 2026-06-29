@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { Header } from "@/components/landing/Header";
-import { Footer } from "@/components/landing/Footer";
+import Footer from "@/components/kimi/Footer";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -14,7 +14,7 @@ const lastUpdated = "13 maggio 2026";
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-ink-950 text-white selection:bg-brand-400/30 selection:text-white">
-      <Header />
+      <PrivacyHeader />
       <main className="pt-36 pb-24 md:pt-40">
         <article className="mx-auto max-w-3xl px-6 text-ink-100">
           <Link
@@ -323,6 +323,31 @@ export default function PrivacyPolicyPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+function PrivacyHeader() {
+  return (
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-[rgba(26,26,26,0.85)] px-6 backdrop-blur-xl lg:px-10">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between">
+        <Link href="/" className="flex h-14 w-[148px] items-center" aria-label="Swarp Consulting home">
+          <Image
+            src="/swarp-consulting-logo-full.png"
+            alt="Swarp Consulting"
+            width={848}
+            height={332}
+            priority
+            className="h-12 w-auto object-contain"
+          />
+        </Link>
+        <Link
+          href="/"
+          className="rounded bg-[var(--gold)] px-5 py-2.5 text-[13px] font-semibold uppercase text-[var(--black)] transition hover:scale-[1.02]"
+        >
+          Home
+        </Link>
+      </div>
+    </header>
   );
 }
 

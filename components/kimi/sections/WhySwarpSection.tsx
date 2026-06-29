@@ -4,13 +4,12 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SectionOverline from "@/components/kimi/SectionOverline";
-import SplitHeading from "@/components/kimi/SplitHeading";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const proofPoints = [
-  "Corsi per tutte le aziende private con almeno un dipendente",
-  "Formazione finanziabile fino al 100%, in base ai requisiti",
+  "Corsi per tutte le aziende con almeno un dipendente",
+  "Formazione finanziabile al 100%",
   "Burocrazia gestita da Swarp",
   "Percorsi per ogni settore e area professionale",
 ];
@@ -71,9 +70,6 @@ export default function WhySwarpSection() {
         <div className="grid items-start gap-16 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
             <SectionOverline>PERCHÉ SWARP</SectionOverline>
-            <SplitHeading as="h2" className="mt-4">
-              Risorse già versate. Competenze ancora da costruire.
-            </SplitHeading>
           </div>
 
           <div className="why-copy opacity-0">
@@ -92,9 +88,11 @@ export default function WhySwarpSection() {
               className="mt-6 font-body"
               style={{ color: "var(--light-gray)", fontSize: "18px", lineHeight: 1.7 }}
             >
-              Molte imprese non sanno che queste risorse possono essere utilizzate. I fondi non
-              impiegati tornano all&apos;INPS: Swarp ti aiuta a capire cosa può essere finanziato,
-              gestisce la procedura e trasforma il fondo in corsi concreti per il tuo team.
+              Molte imprese non sanno di poter utilizzare queste risorse per finanziare la
+              formazione dei propri dipendenti. I fondi non utilizzati vengono restituiti
+              all&apos;INPS. Swarp ti aiuta a individuare le opportunità disponibili, gestisce
+              l&apos;intero iter burocratico e trasforma le risorse disponibili in percorsi
+              formativi per il tuo team.
             </p>
           </div>
         </div>

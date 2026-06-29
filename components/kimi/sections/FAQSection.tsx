@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitHeading from "@/components/kimi/SplitHeading";
 import SectionOverline from "@/components/kimi/SectionOverline";
 import { Plus } from "lucide-react";
-import { faqItems } from "@/components/landing/data";
+import { faqItems } from "@/lib/site-data";
 
 gsap.registerPlugin(ScrollTrigger);
 

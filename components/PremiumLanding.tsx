@@ -16,7 +16,6 @@ import PartnersSection from "@/components/kimi/sections/PartnersSection";
 import ProcessSection from "@/components/kimi/sections/ProcessSection";
 import RegionalFundsSection from "@/components/kimi/sections/RegionalFundsSection";
 import ServicesSection from "@/components/kimi/sections/ServicesSection";
-import StatsSection from "@/components/kimi/sections/StatsSection";
 import TrainingSection from "@/components/kimi/sections/TrainingSection";
 import TrustBarSection from "@/components/kimi/sections/TrustBarSection";
 import WhySwarpSection from "@/components/kimi/sections/WhySwarpSection";
@@ -66,7 +65,6 @@ export function PremiumLanding() {
           <ProcessSection />
           <TrainingSection />
           <RegionalFundsSection />
-          <StatsSection />
           <PartnersSection />
           <CareerSection />
           <FAQSection />

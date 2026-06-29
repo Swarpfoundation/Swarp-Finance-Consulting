@@ -13,7 +13,7 @@ const services = [
     icon: ShieldCheck,
     title: "Gestione Completa",
     description:
-      "Ti accompagniamo dalla spiegazione del fondo alla raccolta documenti, fino all'iscrizione e all'avvio dei corsi.",
+      "Ti seguiamo in ogni fase: ti spieghiamo come funziona il fondo, ci occupiamo della documentazione e ti affianchiamo fino all'avvio dei corsi.",
     tags: ["Iscrizione", "Documenti"],
     iconColor: "var(--gold)",
   },
@@ -21,7 +21,7 @@ const services = [
     icon: GraduationCap,
     title: "Formazione su Misura",
     description:
-      "Progettiamo piani formativi personalizzati in base alle esigenze specifiche della tua azienda e del tuo settore.",
+      "Costruiamo percorsi formativi adattati alle esigenze della tua azienda e alle specificità del tuo settore.",
     tags: ["Piani Formativi", "Fabbisogni"],
     iconColor: "var(--gold)",
   },
@@ -29,7 +29,7 @@ const services = [
     icon: HardHat,
     title: "Sicurezza sul Lavoro",
     description:
-      "Formazione obbligatoria in materia di salute e sicurezza, inclusi percorsi di primo soccorso e antincendio.",
+      "Formazione obbligatoria su salute e sicurezza, inclusi primo soccorso e antincendio.",
     tags: ["D.Lgs. 81/08", "Antincendio", "Primo Soccorso"],
     iconColor: "var(--green)",
   },
@@ -37,7 +37,7 @@ const services = [
     icon: FileText,
     title: "Bandi Regionali",
     description:
-      "Verifichiamo opportunità regionali come Formazione Continua FSE+ Lombardia 2021-2027, in base ai requisiti del bando attivo.",
+      "Monitoriamo e valutiamo le principali opportunità regionali attive, come ad esempio il bando FSE+ Lombardia 2021-2027.",
     tags: ["FSE+", "Lombardia", "Co-finanziamento"],
     iconColor: "var(--gold)",
   },
@@ -145,7 +145,7 @@ export default function ServicesSection() {
             className="font-body mt-6 mx-auto max-w-2xl opacity-0"
             style={{ fontSize: "18px", color: "var(--light-gray)", lineHeight: 1.6 }}
           >
-            Ti aiutiamo a navigare la burocrazia e accedere ai fondi di formazione a cui la tua azienda ha già diritto
+            Gestiamo la burocrazia e ti aiutiamo a ottenere i fondi per la formazione a cui la tua azienda ha già diritto.
           </p>
         </div>
 

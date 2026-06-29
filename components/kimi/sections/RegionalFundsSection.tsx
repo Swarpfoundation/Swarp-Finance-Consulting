@@ -33,13 +33,6 @@ const goldPaths = [
   "M265,140 L305,140 M265,160 L305,160",
 ];
 
-const cofinancing = [
-  { rate: "90%", label: "Micro imprese" },
-  { rate: "70%", label: "Piccole imprese" },
-  { rate: "60%", label: "Medie imprese" },
-  { rate: "50%", label: "Grandi imprese" },
-];
-
 export default function RegionalFundsSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -219,9 +212,18 @@ export default function RegionalFundsSection() {
             {/* Stats Row */}
             <div className="rf-anim flex flex-wrap gap-8 mt-10 opacity-0">
               {[
-                { value: "€ 2.000,00", label: "Valore massimo percorsi per partecipante" },
-                { value: "€ 50.000,00", label: "Importo annuale massimo per impresa" },
-                { value: "Fino al 90%", label: "In caso di formazione su tematiche digitali" },
+                {
+                  value: "2000",
+                  label: "Valore massimo dei corsi formativi a cui può accedere ogni partecipante",
+                },
+                {
+                  value: "50000",
+                  label: "Importo annuale massimo per ciascun'impresa",
+                },
+                {
+                  value: "Cofinanziamento fino al 90%",
+                  label: "Se la formazione riguarda tematiche digitali",
+                },
               ].map((stat, i) => (
                 <div key={i}>
                   <span
@@ -238,33 +240,6 @@ export default function RegionalFundsSection() {
                   </span>
                 </div>
               ))}
-            </div>
-
-            <div className="rf-anim mt-9 opacity-0">
-              <p
-                className="font-body text-sm uppercase tracking-wider"
-                style={{ color: "var(--light-gray)" }}
-              >
-                Cofinanziamento indicativo per dimensione aziendale
-              </p>
-              <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                {cofinancing.map((tier) => (
-                  <div
-                    key={tier.label}
-                    className="rounded border border-white/10 bg-[var(--dark-gray)] p-4"
-                  >
-                    <span className="block font-display text-3xl text-[var(--gold)]">
-                      {tier.rate}
-                    </span>
-                    <span
-                      className="mt-1 block font-body text-xs"
-                      style={{ color: "var(--light-gray)" }}
-                    >
-                      {tier.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <p

@@ -1,4 +1,4 @@
-import { contactRoles, type ContactRole } from "@/components/landing/data";
+import { contactRoles, type ContactRole } from "@/lib/site-data";
 
 export type LeadPayload = {
   firstName: string;

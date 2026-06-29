@@ -25,13 +25,6 @@ const partners = [
       "Organizzazione dedicata allo sviluppo delle relazioni economiche, commerciali e industriali tra Italia e Marocco.",
     href: "https://ccmaroccoitalia.it/",
   },
-  {
-    src: "/partner-wd-university.png",
-    name: "WD University",
-    description:
-      "Polo universitario e centro di formazione accademica dedicato a percorsi di istruzione superiore, crescita professionale e innovazione.",
-    href: "https://companywd.com/",
-  },
 ];
 
 export default function PartnersSection() {
@@ -75,7 +68,7 @@ export default function PartnersSection() {
           </SplitHeading>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3" style={{ perspective: "1200px" }}>
+        <div className="mt-16 grid gap-6 md:grid-cols-2" style={{ perspective: "1200px" }}>
           {partners.map((partner) => (
             <a
               key={partner.name}

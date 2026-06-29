@@ -5,10 +5,9 @@ import Link from "next/link";
 import { Check, Mail, MapPin, Phone } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitHeading from "@/components/kimi/SplitHeading";
 import SectionOverline from "@/components/kimi/SectionOverline";
 import { validateLeadPayload, type LeadPayload } from "@/lib/validation";
-import { contactRoles, type ContactRole } from "@/components/landing/data";
+import { contactRoles, type ContactRole } from "@/lib/site-data";
 import { cn } from "@/lib/cn";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -137,11 +136,8 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-[1fr_1.2fr]">
           <div className="contact-left opacity-0">
             <SectionOverline>CONTATTACI</SectionOverline>
-            <SplitHeading as="h2" className="mt-4">
-              Parliamo del Tuo Progetto
-            </SplitHeading>
             <p
-              className="mt-6 font-body"
+              className="mt-4 font-body"
               style={{ fontSize: "16px", color: "var(--light-gray)", lineHeight: 1.6 }}
             >
               Compila il questionario o chiamaci direttamente. Ti ricontatteremo entro pochi giorni

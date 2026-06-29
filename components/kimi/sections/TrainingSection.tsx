@@ -11,44 +11,40 @@ const categories = [
     number: "01",
     overline: "OBBLIGATORIA",
     title: "Formazione Obbligatoria",
-    subtitle: "Salute, sicurezza e conformità per il lavoro quotidiano.",
     background: "#20231f",
     accent: "#6fa678",
     items: [
-      "Sicurezza sul lavoro secondo D.Lgs. 81/08",
-      "Antincendio per addetti e aggiornamenti periodici",
-      "Primo soccorso per addetti aziendali",
+      "Sicurezza sul lavoro (D.Lgs. 81/08)",
+      "Antincendio",
+      "Primo soccorso",
       "Aggiornamenti obbligatori in materia di salute e sicurezza",
     ],
   },
   {
     number: "02",
     overline: "PROFESSIONALIZZANTE",
-    title: "Competenze che fanno crescere l'azienda",
-    subtitle: "Percorsi pratici per organizzazione, digitale e sviluppo commerciale.",
+    title: "Formazione Professionalizzante",
     background: "#252321",
     accent: "#c8a45c",
     items: [
-      "Marketing, branding, vendite e gestione del cliente",
-      "Gestione aziendale, organizzazione, Excel e analisi dati",
-      "Siti web, e-commerce e presenza digitale",
+      "Marketing, branding e vendite",
+      "Gestione aziendale, Excel e analisi dati",
+      "Creazione di siti web",
       "Intelligenza artificiale e automazioni",
-      "Inglese business e italiano operativo per il personale straniero",
+      "Corsi di lingua (inglese e italiano per il personale straniero)",
     ],
   },
   {
     number: "03",
     overline: "SETTORIALE",
-    title: "Formazione costruita sul tuo settore",
-    subtitle: "Contenuti specifici per attività, ruoli e obiettivi reali.",
+    title: "Formazione Settoriale",
     background: "#211f24",
     accent: "#d2b571",
     items: [
-      "Formazione istruttori e personal trainer",
-      "Gestione clienti e organizzazione dei centri fitness",
+      "Formazione per diventare istruttori e personal trainer",
       "Bartender, mixology, gestione staff e servizio clienti",
-      "Percorsi per ristoranti, hotel e bar",
-      "Formazione tecnica definita sui fabbisogni dell'azienda",
+      "Formazione per ristoranti, hotel e bar",
+      "Formazione tecnica specifica per ogni settore",
     ],
   },
 ];
@@ -160,12 +156,6 @@ export default function TrainingSection() {
                 >
                   {category.title}
                 </h2>
-                <p
-                  className="mt-6 max-w-xl font-body"
-                  style={{ color: "var(--light-gray)", fontSize: "18px", lineHeight: 1.65 }}
-                >
-                  {category.subtitle}
-                </p>
               </div>
 
               <div className="border-l border-white/10 pl-6 md:pl-10">

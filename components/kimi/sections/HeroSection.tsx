@@ -230,7 +230,7 @@ export default function HeroSection() {
             textShadow: "0 2px 12px rgba(0,0,0,0.8)",
           }}
         >
-          Trasformiamo i fondi interprofessionali in opportunità di crescita per la tua azienda
+          Gestiamo i fondi interprofessionali per finanziare la crescita della tua azienda.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
