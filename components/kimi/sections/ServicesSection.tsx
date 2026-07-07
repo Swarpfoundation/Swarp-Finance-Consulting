@@ -159,11 +159,12 @@ export default function ServicesSection() {
             return (
               <div
                 key={i}
-                className="service-card p-10 rounded-lg transition-all duration-400 opacity-0"
+                className={`service-card p-10 rounded-lg transition-all duration-400 opacity-0 ${
+                  i === 1 ? "md:-mt-10" : ""
+                }`}
                 style={{
                   background: "var(--dark-gray)",
                   border: "1px solid rgba(250, 250, 250, 0.1)",
-                  marginTop: i % 2 === 1 ? "-40px" : "0",
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "var(--gold-dim)";
